@@ -20,7 +20,7 @@
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5om-Ay-ddd">
                         <rect key="frame" x="352" y="27" width="116" height="62"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="116" id="Dat-OQ-Cfc"/>
                             <constraint firstAttribute="height" constant="62" id="K8W-En-dDo"/>

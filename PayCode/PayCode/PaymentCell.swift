@@ -24,15 +24,6 @@ class PaymentCell: UICollectionViewCell {
         super.prepareForReuse()
         self.model = nil
     }
-    func refresh() {
-//        self.paymentView.backgroundColor = self.getRandomColor()
-    }
-    
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        self.bgView.layer.cornerRadius = 5.0
-//        self.bgView.layer.masksToBounds = true
-//    }
     
     func configureWithModel(model:Payment) {
         self.model = model
@@ -58,8 +49,10 @@ class PaymentCell: UICollectionViewCell {
     }
     
     @IBAction func deleteTapped(sender: AnyObject) {
+        
         self.model.deleteFromApi()
     }
+    
     func getRandomColor() -> UIColor{
         
         let randomRed:CGFloat = CGFloat(drand48())

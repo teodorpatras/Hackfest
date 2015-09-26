@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 import Alamofire
-
+import SVProgressHUD
 
 
 enum PaymentType:String {
@@ -49,7 +49,9 @@ class Payment: NSManagedObject {
         request.HTTPMethod = "DELETE"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
+        SVProgressHUD.show()
         Alamofire.request(request).responseJSON { (request, response, result) -> Void in
+            SVProgressHUD.dismiss()
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             appDelegate.managedObjectContext.deleteObject(self)
         }

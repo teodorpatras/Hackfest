@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        SVProgressHUD.setBackgroundColor(UIColor(hue:0, saturation:0, brightness:0.09, alpha:1))
+        SVProgressHUD.setForegroundColor(UIColor.whiteColor())
         application.statusBarStyle = .LightContent
         self.window?.tintColor = UIColor.whiteColor()
         let appearance = UINavigationBar.appearance()
