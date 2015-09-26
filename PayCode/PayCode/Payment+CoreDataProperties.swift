@@ -13,7 +13,8 @@ import Foundation
 import CoreData
 
 extension Payment {
-
+    
+    @NSManaged var id: NSNumber
     @NSManaged var name: String
     @NSManaged var identifier: String
     @NSManaged var validUntill: String?
