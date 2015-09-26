@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import Alamofire
 
 
 
@@ -41,5 +42,16 @@ class Payment: NSManagedObject {
 
     var paymentType:PaymentType {
         return PaymentType(rawValue: self.type)!
+    }
+    
+    func deleteFromApi() {
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://ohf.hern.as/payments/\(self.id.integerValue)/")!)
+        request.HTTPMethod = "DELETE"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        Alamofire.request(request).responseJSON { (request, response, result) -> Void in
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.managedObjectContext.deleteObject(self)
+        }
     }
 }

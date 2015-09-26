@@ -17,6 +17,12 @@ class PaymentCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var bgView: UIImageView!
+    
+    var model:Payment!
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.model = nil
+    }
     func refresh() {
 //        self.paymentView.backgroundColor = self.getRandomColor()
     }
@@ -28,6 +34,7 @@ class PaymentCell: UICollectionViewCell {
 //    }
     
     func configureWithModel(model:Payment) {
+        self.model = model
         self.bgView.layer.cornerRadius = 5.0
         self.bgView.layer.masksToBounds = true
         self.chipView.layer.cornerRadius = 5.0
@@ -43,6 +50,9 @@ class PaymentCell: UICollectionViewCell {
         self.chipView.hidden = model.paymentType == .Paypal
     }
     
+    @IBAction func deleteTapped(sender: AnyObject) {
+        self.model.deleteFromApi()
+    }
     func getRandomColor() -> UIColor{
         
         let randomRed:CGFloat = CGFloat(drand48())

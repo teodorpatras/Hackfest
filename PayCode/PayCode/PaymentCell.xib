@@ -91,12 +91,23 @@ thru</string>
                         <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <size key="shadowOffset" width="1" height="1"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDV-UV-KX3">
+                        <rect key="frame" x="442" y="236" width="45" height="30"/>
+                        <state key="normal" title="Delete">
+                            <color key="titleColor" red="0.8862745098" green="0.1058823529" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteTapped:" destination="Clh-21-cD6" eventType="touchUpInside" id="jIk-mA-lHY"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
                 <constraint firstItem="nrH-v1-Ywb" firstAttribute="leading" secondItem="Clh-21-cD6" secondAttribute="leading" id="2cl-ZT-WXv"/>
                 <constraint firstAttribute="trailing" secondItem="5om-Ay-ddd" secondAttribute="trailing" constant="27" id="73p-bU-6Q1"/>
+                <constraint firstAttribute="bottom" secondItem="YDV-UV-KX3" secondAttribute="bottom" constant="8" id="D72-pk-LF9"/>
+                <constraint firstAttribute="trailing" secondItem="YDV-UV-KX3" secondAttribute="trailing" constant="8" id="EAi-cR-3DM"/>
                 <constraint firstItem="aQT-4W-f4j" firstAttribute="leading" secondItem="Clh-21-cD6" secondAttribute="leading" constant="70" id="JCT-LQ-hk7"/>
                 <constraint firstAttribute="bottom" secondItem="2yP-ZN-Fua" secondAttribute="bottom" constant="41.5" id="OeX-Bo-Csi"/>
                 <constraint firstItem="5om-Ay-ddd" firstAttribute="top" secondItem="Clh-21-cD6" secondAttribute="top" constant="27" id="PuR-eb-Z9d"/>
