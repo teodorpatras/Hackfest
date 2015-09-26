@@ -4,7 +4,7 @@ use_frameworks!
 target 'PayCode' do
 pod 'Alamofire'
 pod 'SVProgressHUD'
-pod 'CardIO'
+pod 'PayPal-iOS-SDK'
 pod 'FontAwesomeKit'
 pod 'TGLStackedViewController'
 

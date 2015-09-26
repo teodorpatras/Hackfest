@@ -10,7 +10,7 @@ import UIKit
 import TGLStackedViewController
 import FontAwesomeKit
 
-class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewControllerDelegate {
+class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewControllerDelegate,PayPalFuturePaymentDelegate {
     
     weak var addButton : UIButton!
     
@@ -29,6 +29,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         super.viewDidLoad()
         configureUI()
         CardIOUtilities.preload()
+        PayPalMobile.preconnectWithEnvironment(PayPalEnvironmentSandbox)
     }
     
     // MARK: - CardIO -
@@ -56,15 +57,35 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         return 3
     }
     
+    // MARK: - PayPalFuturePayment -
+    
+    func payPalFuturePaymentDidCancel(futurePaymentViewController: PayPalFuturePaymentViewController!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, didAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!) {
+        print("-----------------\n\n\(futurePaymentAuthorization)\n\n--------------------")
+    }
+    
+    func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, willAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!, completionBlock: PayPalFuturePaymentDelegateCompletionBlock!) {
+        
+    }
+    
     // MARK: - Callbacks -
     
     func addPayment() {
 
         let controller = UIAlertController(title: "Choose payment method", message: nil, preferredStyle: .ActionSheet)
         let payPalAction = UIAlertAction(title: "PayPal", style: .Default) { _ -> Void in
-            
+
+            let configuration = PayPalConfiguration()
+            configuration.merchantName = "PayCode"
+            configuration.merchantPrivacyPolicyURL = NSURL(string: "http://www.google.com")
+            configuration.merchantUserAgreementURL = NSURL(string: "http://www.google.com")
+            let controller = PayPalFuturePaymentViewController(configuration: configuration, delegate: self)
+            self.presentViewController(controller, animated: true, completion: nil)
         }
-        
+
         let cardAction = UIAlertAction(title: "Credit card", style: .Default) { _ -> Void in
             // card
             let cardIOVC = CardIOPaymentViewController(paymentDelegate: self)

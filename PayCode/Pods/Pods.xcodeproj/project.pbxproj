@@ -7,193 +7,199 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004CAB6D236EA3DF7C548CC9FA8D73E5 /* FontAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 979AEC8EAA0456AADF94D61EA267B5C1 /* FontAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07DD36EBD3473D7C001190EAC1D10E07 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75CB8B5322EE1EC246E7AB4DDF632D /* Upload.swift */; };
 		08629E78286EC90A5241D852D7C37C29 /* TGLStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779A892481E434D0B80ABC91803D58D2 /* TGLStackedViewController.m */; };
+		0B694BACA1BCC0F26DEE08319240BA59 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479F6400C784DB82100D8C95ADB00502 /* Download.swift */; };
 		0ED2ABCF8D5F86C9B673707931B3906F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 160FAFDD01615679A73D463CAB98FD9B /* SVIndefiniteAnimatedView.m */; };
 		0F065E6B7BFAC572C4556715B73087E9 /* TGLStackedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A2FE8C2DC3D35273D44D9E7F257AC /* TGLStackedLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		104F2B06EC21B69D88BAA25DAC76D5BE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8615886212F938891A155BCD17C0F /* Manager.swift */; };
 		110E53BDCF2D4B33794763AABD741D0F /* TGLStackedViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B7254B664F5D058946DD63CC94C36E /* TGLStackedViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		122092771FBAB077A4F4E2E89E9924A9 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA9107B88388D4B6161173D672A218 /* FAKFoundationIcons.m */; };
-		190246CC2CC6D3176A2A7AA4E506EEA6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493E008D101737D2DB2018F993E88FD2 /* Request.swift */; };
-		1C99AB6FDA8371C233785485D68DE64D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
-		1EFAD07EEBA658AF2B3F14EB1CE9D937 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1EB95C05417109A9FC9EDCD976E2C /* Alamofire.swift */; };
+		18390C5BA798C97FF3AC7FDBC1685A81 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB438AE01A9A815A64CB7BAA9B5CB9F /* FAKIonIcons.m */; };
+		1F750469E93A33A125A0367673B8DC91 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECA7AAF50759E6A26E392AFEF003D534 /* FontAwesome.otf */; };
 		23B7333F7DB45582EE47B940BCD3B57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
+		25D7EEDE786D9DB1F901FA350AE97389 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA3AD8D523535BCBB1B4CE2142A1BFB /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28519B3AECF5C3B2EEEE01F361268482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
-		2A9A1E9DD84105A8CE6432B4A72F0A23 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D736C9082AC2E2EDA7A9859F5661B326 /* Alamofire-dummy.m */; };
-		3022079DCC9B44FB9BD819A5AE9BB744 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB9109F3ECDD499DB951E10706D0D1C /* FAKIonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		316F3D4EE5BD6A00D34F1E9B8C6A03CA /* FontAwesomeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B048536E815E06AC62C2E012F66B5A /* FontAwesomeKit-dummy.m */; };
+		35638BA29F358DF26D21FBF9F5B2D3DF /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7990B052F3547E3E51FECA55064436D /* ParameterEncoding.swift */; };
 		38347B569B55C922B66402C492950AD1 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27179B7FA11C83574FAC0D1A42630A67 /* SVProgressHUD-dummy.m */; };
 		39E9A8BA169A22D44FB7822E3B0F2A53 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A49D155FB7467254D0690132E4CF52A6 /* SVProgressHUD.m */; };
-		3A09BDFB4D973E122B3956BDD45BB40D /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 702C93CA3D4B1265FFB6C3E0599ACD7C /* ionicons.ttf */; };
-		400C7DC0CB1EDA95781D39AC73221769 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E6D7B197747F4F65BF85F7082A71DD /* FAKIcon.m */; };
-		439961B2AFFB91AA31761F115B1F6CC3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD2A8EBFF6CA73A874CDD7F6884211 /* Error.swift */; };
+		43708DB0CD0F7A4D952996FD490E1086 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9090983EAD89452DB5ECCA86B6BDA69 /* Stream.swift */; };
 		451570EC2532B5950ECAFBB06467C626 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4872AC631E92D0FC3E12DBFC7B0523 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47AB91B70F35BA70B9CCC1D89B44E27F /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 54ECC8ACBB3825CC8D7FB410F36938CD /* FAKIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AFD73CA52AE620DF43B5C2750F613B5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34F1386E0A01AA5FCAB410BC7985C5 /* Result.swift */; };
-		564E3A6791354844BE406FB0B3B608A5 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDEF912C355F43B89070D0FFF90518D /* ParameterEncoding.swift */; };
+		547108FF497628AF5ECF9C5FE2269936 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C254E380540FC030B1CFAE0C7929D /* FAKFoundationIcons.m */; };
+		639ACB6EFB87E3824EF229E330DCDBCD /* FontAwesomeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E37B731DDDEA6C9C76DB99C07FF8 /* FontAwesomeKit-dummy.m */; };
+		68B63139B398AF02400517DFFD13C11C /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = E671823D078836B173517F9B60083740 /* FAKIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69F20880C96CB8B9EAD653AFA8F46646 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C194BEB5A7C41354AD3E247C837BCD /* Validation.swift */; };
+		6D2BC40C99D74E4082AD5CB20A00DD7F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD74C1A964033201D96DE0B55E2BC0 /* Alamofire.swift */; };
+		7BD909E1EDF1684692165B070D129DAE /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C614BEB5316D24B2360D7151FF13171 /* FAKZocial.m */; };
+		7C26A9B0B3D5107276F47587209B6D48 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483CAF67DDD165E3445F147AB4CF4FB5 /* Request.swift */; };
 		7D45416845B5C7EADD5288886D11DD46 /* TGLExposedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB851C2F0FA49D84D0DD89B7ABD57B3 /* TGLExposedLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFC5BCF1FA1BFF531754F8E4F1C3B3E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B3420DAF12B3F62D3563A1F8E3C21 /* MultipartFormData.swift */; };
+		80BEDEA3EE17A665D31E9A64E7B88609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
 		82724E3CC6FE33E489BEDEF9CBE304E4 /* TGLStackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F0779D843BDE4B04633640B041484B27 /* TGLStackedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		835CF38B582530557A237881057DE42B /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9735521DB306B0C309DB53D8710B32 /* FAKZocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B0CFEB5406DA7EC4851B016BCA1293 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AF29BDD654EB14AD2C4DBAC9C9308CA /* zocial-regular-webfont.ttf */; };
+		88DB756D123154FCF197979AA6E0AD1C /* FontAwesomeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96415D3F5164CC97AD7ADC160BBE22E3 /* FontAwesomeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E395FF6E3EBAD0E8E514AE2D67F77E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E069152A9357E2833CE5C53DC6A299 /* Result.swift */; };
 		8B6CCD531C6DDACBC96F9B8755C90DCB /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5130A69E51586F77FF832D1282C3798F /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D0C850398D429DC0F32CD16BCDBAB4E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435F8A211B4A1DB15BD36C5BC9D7E2A /* Manager.swift */; };
+		8D93211B91515C297B813FCDD6397444 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3479027AC0C173469E28831ADAA9E2DE /* ionicons.ttf */; };
 		90609EF96AE1F72C5CF3B896A227779B /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 328C5C16529970384DF08F8A97791935 /* SVProgressHUD.bundle */; };
 		92193ADEDFAFDFC61577DF0AAC8253B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A48C2A51E21E980080AE28105B8C03 /* QuartzCore.framework */; };
-		956A65CB9A08FACBA862AA157815FB0C /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DA758B218E595DD68399339BD4384 /* FAKFontAwesome.m */; };
-		A1B6C8CA1FAA6C8097AC32CD9CE0FFCC /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = C2737FBA8E65EDFEBBF1B1F1B29BDFD6 /* FAKZocial.m */; };
-		A3B8244FAB4E899E5D9EAEF2DB7EAC27 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EBB36177773935B61F29EF63224C /* Stream.swift */; };
-		A43B5BBD6682831CD3FB49EE81E1230E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84C64B5EBDE6526F375A5BC9FD23C9 /* MultipartFormData.swift */; };
-		B12F5BC1C1186E60EF3C1F672356DCA0 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5543EE84FB3F113962E34D3C5BA4151 /* Upload.swift */; };
-		B325C1D3A3311F311CEF49995C4C86FF /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0681E841683FCCE540E3FDD484979E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B40A2E1EA1B88B03A007A104BD25CD09 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E6FF5EC2A7347D9260D3C3BC51E74 /* ResponseSerialization.swift */; };
-		B56695FBE29EBE6B93A2E302956F8017 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F24A6AADADE717B9C8623BB152315C /* Download.swift */; };
-		BE579BFACBB7E8269D5AE5DC0A747B5F /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1BBFFFC5AA88AF6C884E62CE5AB686 /* FAKFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF74156F1BE622E70190F59C65562CBF /* FontAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A348161F3C22C8B293B35DFF78D555 /* FontAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3C4229D4947913EF852C58566D74AC6 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = EC39633A16182A57EBB5C9CBA8989573 /* FAKIonIcons.m */; };
+		97FD43D270605ED3868E42422942CEFE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB864B9954ACB2BA51E27A73C289C2 /* CoreText.framework */; };
+		9FB6698900A885BBD95F92AE9B28087F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
+		A49D0CEFD1651074AB471C9D37EF2A10 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5BDCAFA0C094F48CD8DFCA51C4CA5B /* FAKIonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B52F786DCDB63B35362B6842C687D485 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43FFDFFF4E29F02E0D41F63A42C67A26 /* foundation-icons.ttf */; };
+		BEC5DDD8150174FEC86155D556FE4AFA /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3CB28CFE797D73F48B3E6D8300F38 /* Error.swift */; };
+		C2608AA2351A6B062CBA60CB3CF4657A /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E3DC72B66C6D4DF9CAACD0536415C4 /* Alamofire-dummy.m */; };
 		C3DE2331767D360F56A110A7529CAB7E /* TGLStackedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D9A6082A3A275AEEDB02BAADBF053B /* TGLStackedViewController-dummy.m */; };
-		C6A4CD3C8097C6F1BAACD2A4E0BFDF96 /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D10FD4E1C7F67EE03C842F66D4432F /* FAKFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9098ECA90DD50BCF0839533BD0A96FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
+		C9B61727FD86200DFFA561766543320A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50A9A78B88B3E324B027F9C39DC1D42 /* UIKit.framework */; };
+		CB3A5192BE30F14B74DA69ADBB737B57 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8651FE2DCCC196DD7BEDBC5CCB5835D /* ServerTrustPolicy.swift */; };
 		CC3A3C8101F4AF0B85A4D9900CB235AD /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D06DC1A49820B525E8075FB9B854E49A /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE80C533037133616C9D000383FCBE4C /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9341FDE57652976C087AA4269EB589 /* FAKZocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3744910EA593307E4267FFD0E7B7894 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C2601D778D7FCFE9AE629C17A48A7C9 /* foundation-icons.ttf */; };
+		CF2F98455B3B774A2F95E7BD13723813 /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 79ACAF1466C9CC700437FD2B3F9A6FB5 /* FAKFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFCCFE0C4D09C9801E86B59DC3BF0544 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C70B9121AB4CE15F9DB9488292AEC8 /* FAKFontAwesome.m */; };
 		D75CF015CE896D0CBF3F8FC2E9447D30 /* TGLExposedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1A3B19DE235B0068F9E3AE44212DE7 /* TGLExposedLayout.m */; };
-		DE2B83D1834AE6E3D48B6821F5524995 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91039D26B7B6388DE7235692C2F50B9D /* CoreText.framework */; };
-		E002BE8DD1E788FA44676362CF5407E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */; };
-		E39CFDB63867520F07F92941DB9F118D /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C35BCF3333C31BE93BC34D34D3C03 /* Validation.swift */; };
-		E95A3C9C2B40A6C71A8B4BD511383779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B48513323396D1EF179334DE4DB197 /* UIKit.framework */; };
-		EA3A8324E2FB9DB27FD7C95852260D1E /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18CEE512966475CBE95BC424CD5C6DC /* zocial-regular-webfont.ttf */; };
-		EAC14015AC970CF3036489AEE1C7B0DD /* FontAwesomeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0309D0B8F6D57141208ACE4DE45A3AE1 /* FontAwesomeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D870EE89459B12C462A6CAC04D8200E2 /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 811369F1D5734BE808E15D2ADC89C5E0 /* FAKFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC3769D1545044830EBF21B27E095C46 /* TGLStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BC5D8A30437EF9B254403EB5D9C5E /* TGLStackedLayout.m */; };
-		ED4344AF0B67221FD1711B25C03FC046 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A73B19D6207ECE70233D7533D3A06 /* FontAwesome.otf */; };
-		F0A0B16F0404D0C89A32F2318E78C1D4 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F6BE9243FE83E7D36A194BC51B815 /* ServerTrustPolicy.swift */; };
+		F3321D7E46A49FD1B66900DAD1735C7C /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738FC3F02BC90F848F8EE7B063A5751 /* ResponseSerialization.swift */; };
+		F634CCFBE536E7387710BE2175E0063F /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F4DF62B2622D6C1CC18BB9B71261A /* FAKIcon.m */; };
 		F64ACBEF26747457D9C25BD6CF6CB9AC /* Pods-PayCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B60225E7612A819FADA2DAC78F136A9A /* Pods-PayCode-dummy.m */; };
 		F93E7556FA39D65AB39A9AFB8CAE39AA /* Pods-PayCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D4543E38871E9290CF26D7AB816C46 /* Pods-PayCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6705B58894A1B0ED504A3995D1735F88 /* PBXContainerItemProxy */ = {
+		1B1E57F5D64459F01C9A70EAC03E7915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A064B75A9838606659BB57FE5AC8A101;
 			remoteInfo = SVProgressHUD;
 		};
-		AA80D083FA1674F6806A17DDC09E9C05 /* PBXContainerItemProxy */ = {
+		85DACA386BC9FF4057D62E21239E86D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B20682110B88BB32BA1340E287FAAED;
+			remoteGlobalIDString = B85BAA936E50665449890C28F3ADB5E3;
 			remoteInfo = FontAwesomeKit;
 		};
-		C1C24B8E855CB6CFD35B3F51D2B6EC9D /* PBXContainerItemProxy */ = {
+		B3405102851F544BFCF435FF5F428710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F77229D349FB65A7C9080933AB945DF;
+			remoteInfo = Alamofire;
+		};
+		D875D722EC5AEF70CAAB9D4B8CA1F30E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D1BACE37ACCCE0CDCF0D9797D138FF6F;
 			remoteInfo = TGLStackedViewController;
 		};
-		DF26022178D4398B245C0FC58AAF4DA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD019CC68F0AD5B6B71D46F7DFAD67C9;
-			remoteInfo = Alamofire;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0309D0B8F6D57141208ACE4DE45A3AE1 /* FontAwesomeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-umbrella.h"; sourceTree = "<group>"; };
+		035B0689D7DF4568763D34D7145DBE29 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = PayPalMobile/CardIOPaymentViewController.h; sourceTree = "<group>"; };
 		04CDB679337E78D457F1458C953965C8 /* Pods_PayCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0995786CCDF687D1EC75D4A3E2794BB4 /* libCardIO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardIO.a; path = CardIO/libCardIO.a; sourceTree = "<group>"; };
-		0BE17CB8D541E719F52336A0B052F07F /* CardIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = CardIO/CardIO.h; sourceTree = "<group>"; };
-		0CDEF912C355F43B89070D0FFF90518D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		0E7F51839494B3C5ABF5778434429940 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		10B048536E815E06AC62C2E012F66B5A /* FontAwesomeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeKit-dummy.m"; sourceTree = "<group>"; };
+		0962005C0E180803D0683701BD157D2F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A64599F01187E23AED342D1B2DF4CFC /* CardIOViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = PayPalMobile/CardIOViewDelegate.h; sourceTree = "<group>"; };
+		0CC238E9F56E6DAA5609D0A4ED6A08C2 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		118407BE4E2F9E9A13918727C8246263 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = PayPalMobile/CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		11F2A832FF697CBEEE1555C42D0395C8 /* FontAwesomeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FontAwesomeKit.modulemap; sourceTree = "<group>"; };
+		155F86AEBD2074A0B7E7B9ECFDEEC6DE /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = PayPalMobile/CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
 		160FAFDD01615679A73D463CAB98FD9B /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		1C9D5F109536849420D3948DB3F2DF1F /* Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		1D545869F02E179B8BC4E671C9EABAC8 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = CardIO/CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
-		1F34F1386E0A01AA5FCAB410BC7985C5 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		18C70B9121AB4CE15F9DB9488292AEC8 /* FAKFontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFontAwesome.m; path = FontAwesomeKit/FAKFontAwesome.m; sourceTree = "<group>"; };
+		19CC76B8BF858A595AFC3B26556C0CB7 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		1C614BEB5316D24B2360D7151FF13171 /* FAKZocial.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKZocial.m; path = FontAwesomeKit/FAKZocial.m; sourceTree = "<group>"; };
+		1E2EB46C1AC59DCE71459990E15296BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3D1A996D791986FFF5C6B8997D0C9C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E4BC8179E0E9DD810C5E6FADC686417 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalProfileSharingViewController.h; path = PayPalMobile/PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		1ED9E9A2838BC2857B428E54152F6E9E /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPaymentViewController.h; path = PayPalMobile/PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		1F19580BC2FAB0E9290250E5CEBA2535 /* CardIODetectionMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = PayPalMobile/CardIODetectionMode.h; sourceTree = "<group>"; };
 		250F35981E00E82E9C32238D05416C50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E3DC72B66C6D4DF9CAACD0536415C4 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		27179B7FA11C83574FAC0D1A42630A67 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		27AD2A8EBFF6CA73A874CDD7F6884211 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		2C1BBFFFC5AA88AF6C884E62CE5AB686 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFoundationIcons.h; path = FontAwesomeKit/FAKFoundationIcons.h; sourceTree = "<group>"; };
+		2AF29BDD654EB14AD2C4DBAC9C9308CA /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
 		2D0BC5D8A30437EF9B254403EB5D9C5E /* TGLStackedLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGLStackedLayout.m; path = TGLStackedViewController/TGLStackedLayout.m; sourceTree = "<group>"; };
-		30A0199C3D06C92DE1320F1011E2C2C6 /* FontAwesomeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeKit.xcconfig; sourceTree = "<group>"; };
-		3185FF6091384526B8F56376CB517E94 /* TGLStackedViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TGLStackedViewController.modulemap; sourceTree = "<group>"; };
 		328C5C16529970384DF08F8A97791935 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		342B5FC41B52F5A57D735782725F8380 /* TGLStackedViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TGLStackedViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		3479027AC0C173469E28831ADAA9E2DE /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = ionicons.ttf; path = FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		358000C6CE25B4FAC6626F009A016466 /* TGLStackedViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TGLStackedViewController.modulemap; sourceTree = "<group>"; };
 		3B890FC4BF88F6C4B40AFFF6894AA5AD /* Pods-PayCode-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayCode-frameworks.sh"; sourceTree = "<group>"; };
-		43CC7F49EE6B3B17025946BE807FDA30 /* CardIOUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = CardIO/CardIOUtilities.h; sourceTree = "<group>"; };
-		4669D3747775EA7E8902C9B150091367 /* TGLStackedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGLStackedViewController-prefix.pch"; sourceTree = "<group>"; };
-		490C6108DE0A2A7D413C4853EA41D49A /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		493E008D101737D2DB2018F993E88FD2 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		3C75CB8B5322EE1EC246E7AB4DDF632D /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		3E07AA6CA66AAE62A178F5772CCFDC3C /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		41BD74C1A964033201D96DE0B55E2BC0 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		43FFDFFF4E29F02E0D41F63A42C67A26 /* foundation-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		479F6400C784DB82100D8C95ADB00502 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		47EE024FFF73BDEA49F44CDB7D77AA6C /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalFuturePaymentViewController.h; path = PayPalMobile/PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		483CAF67DDD165E3445F147AB4CF4FB5 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		4BA3AD8D523535BCBB1B4CE2142A1BFB /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		4BF9C21F2E01701E1610FD41DE46D476 /* Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
 		5130A69E51586F77FF832D1282C3798F /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		53D25319D8D2AC9BB6097274DF4907E1 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		53E4E1D5D7130B6A82497C60BF5CA159 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalOAuthScopes.h; path = PayPalMobile/PayPalOAuthScopes.h; sourceTree = "<group>"; };
 		53FF167ED3A6C43FD39ACD087B4AB20B /* Pods-PayCode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayCode-resources.sh"; sourceTree = "<group>"; };
-		54ECC8ACBB3825CC8D7FB410F36938CD /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
-		556CD34035C067152D581B5D856AC323 /* FontAwesomeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesomeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57806C3EB0D813BE6AE85654A68F6059 /* FontAwesomeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FontAwesomeKit.modulemap; sourceTree = "<group>"; };
+		5511BDEB2C6B6B4D5F71BEEBF8C3A499 /* TGLStackedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TGLStackedViewController.xcconfig; sourceTree = "<group>"; };
+		573A637F26D7229367B8F6BB5D0143D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587B3420DAF12B3F62D3563A1F8E3C21 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		591A2FE8C2DC3D35273D44D9E7F257AC /* TGLStackedLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGLStackedLayout.h; path = TGLStackedViewController/TGLStackedLayout.h; sourceTree = "<group>"; };
-		5E2EA06A322EDD33C6C367966C42D4FC /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = CardIO/CardIOCreditCardInfo.h; sourceTree = "<group>"; };
-		632DF10033C255711AE154356495124E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		63317444D4532BB5276C6A58CDEC5478 /* CardIODetectionMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = CardIO/CardIODetectionMode.h; sourceTree = "<group>"; };
-		64F1EB95C05417109A9FC9EDCD976E2C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		68E6D7B197747F4F65BF85F7082A71DD /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
-		6B80EBB36177773935B61F29EF63224C /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		702C93CA3D4B1265FFB6C3E0599ACD7C /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = ionicons.ttf; path = FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		6435F8A211B4A1DB15BD36C5BC9D7E2A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		66CB864B9954ACB2BA51E27A73C289C2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		6F8F4DF62B2622D6C1CC18BB9B71261A /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
+		72B588B410505D6726B5CEECB29EDA18 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		72D9A6082A3A275AEEDB02BAADBF053B /* TGLStackedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TGLStackedViewController-dummy.m"; sourceTree = "<group>"; };
-		76B48513323396D1EF179334DE4DB197 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		75EFE05F293976702048260B793289DA /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		776292EF337638BAD105FA510579D3CF /* FontAwesomeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-prefix.pch"; sourceTree = "<group>"; };
 		779A892481E434D0B80ABC91803D58D2 /* TGLStackedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGLStackedViewController.m; path = TGLStackedViewController/TGLStackedViewController.m; sourceTree = "<group>"; };
-		7A55CEF8EE1BC5C477EBC303E4E8A9AD /* FontAwesomeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-prefix.pch"; sourceTree = "<group>"; };
-		7C2601D778D7FCFE9AE629C17A48A7C9 /* foundation-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		79ACAF1466C9CC700437FD2B3F9A6FB5 /* FAKFontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFontAwesome.h; path = FontAwesomeKit/FAKFontAwesome.h; sourceTree = "<group>"; };
 		7E57318BBA967760B908B6A896134745 /* Pods-PayCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayCode.release.xcconfig"; sourceTree = "<group>"; };
+		811369F1D5734BE808E15D2ADC89C5E0 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFoundationIcons.h; path = FontAwesomeKit/FAKFoundationIcons.h; sourceTree = "<group>"; };
 		8401AF5D432051A4A01F03D323658C11 /* Pods-PayCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayCode.debug.xcconfig"; sourceTree = "<group>"; };
-		8CB9109F3ECDD499DB951E10706D0D1C /* FAKIonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
-		91039D26B7B6388DE7235692C2F50B9D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		9259A4D8FA456DE5FF9537FFB2487EFF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841BC91AF6429F36F58328440035AE0F /* CardIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = PayPalMobile/CardIO.h; sourceTree = "<group>"; };
+		8643C20A765125CFFC668FC68E30D6E2 /* CardIOUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = PayPalMobile/CardIOUtilities.h; sourceTree = "<group>"; };
+		87E19DE657DD0B78FF6D04D2E973441E /* PayPalMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalMobile.h; path = PayPalMobile/PayPalMobile.h; sourceTree = "<group>"; };
+		884AE09F69F67EAE296C5852AEC8FF52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9228055922AA70670E04F94528AF29D7 /* CardIOView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = PayPalMobile/CardIOView.h; sourceTree = "<group>"; };
 		955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		96D03A43C03EFB6E4FEEAE8AAF3DA184 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = CardIO/CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		96415D3F5164CC97AD7ADC160BBE22E3 /* FontAwesomeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-umbrella.h"; sourceTree = "<group>"; };
+		974C254E380540FC030B1CFAE0C7929D /* FAKFoundationIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFoundationIcons.m; path = FontAwesomeKit/FAKFoundationIcons.m; sourceTree = "<group>"; };
+		979AEC8EAA0456AADF94D61EA267B5C1 /* FontAwesomeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeKit.h; path = FontAwesomeKit/FontAwesomeKit.h; sourceTree = "<group>"; };
 		99D4543E38871E9290CF26D7AB816C46 /* Pods-PayCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayCode-umbrella.h"; sourceTree = "<group>"; };
-		9B1A73B19D6207ECE70233D7533D3A06 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
-		9B9F6BE9243FE83E7D36A194BC51B815 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		9C0681E841683FCCE540E3FDD484979E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		A2D10FD4E1C7F67EE03C842F66D4432F /* FAKFontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFontAwesome.h; path = FontAwesomeKit/FAKFontAwesome.h; sourceTree = "<group>"; };
-		A39E6FF5EC2A7347D9260D3C3BC51E74 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		A3DA9107B88388D4B6161173D672A218 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFoundationIcons.m; path = FontAwesomeKit/FAKFoundationIcons.m; sourceTree = "<group>"; };
+		99F3CB28CFE797D73F48B3E6D8300F38 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		A0C194BEB5A7C41354AD3E247C837BCD /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		A49D155FB7467254D0690132E4CF52A6 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		A4C252BE98079DDF03AE5DCCF52CD059 /* FontAwesomeKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FontAwesomeKit-Private.xcconfig"; sourceTree = "<group>"; };
-		A63244B5BAF37BE79C058DB5C6D8762C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A70C3567663BCB7EFD8373CAEC27F436 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7F24A6AADADE717B9C8623BB152315C /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		A8A1FF8F594BD7550442A74DEA7D35AF /* CardIOViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = CardIO/CardIOViewDelegate.h; sourceTree = "<group>"; };
-		A8A24ADE4BFCCC4B072E74F219C90E5B /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		A9E8615886212F938891A155BCD17C0F /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		B00DA758B218E595DD68399339BD4384 /* FAKFontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFontAwesome.m; path = FontAwesomeKit/FAKFontAwesome.m; sourceTree = "<group>"; };
-		B18CEE512966475CBE95BC424CD5C6DC /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		A4E069152A9357E2833CE5C53DC6A299 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		A7990B052F3547E3E51FECA55064436D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		B5041E49D2D85055674F5469B43E410C /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5543EE84FB3F113962E34D3C5BA4151 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
 		B60225E7612A819FADA2DAC78F136A9A /* Pods-PayCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayCode-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB84C64B5EBDE6526F375A5BC9FD23C9 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		C0A48C2A51E21E980080AE28105B8C03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		C2737FBA8E65EDFEBBF1B1F1B29BDFD6 /* FAKZocial.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKZocial.m; path = FontAwesomeKit/FAKZocial.m; sourceTree = "<group>"; };
 		C75DFF7128D8B0D9A8FFFFE15E5CB7CD /* Pods-PayCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayCode-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9090983EAD89452DB5ECCA86B6BDA69 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
 		CA6BB3761694188164402A724AB5AC07 /* TGLStackedViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TGLStackedViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5AB7B31AFB22423C8E861968EF88BD /* TGLStackedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGLStackedViewController-prefix.pch"; sourceTree = "<group>"; };
 		CC1A3B19DE235B0068F9E3AE44212DE7 /* TGLExposedLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGLExposedLayout.m; path = TGLStackedViewController/TGLExposedLayout.m; sourceTree = "<group>"; };
 		CF4872AC631E92D0FC3E12DBFC7B0523 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		CFEE277121ABA57067DF72E45CF76F01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06DC1A49820B525E8075FB9B854E49A /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		D736C9082AC2E2EDA7A9859F5661B326 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D1521BBEC515A07A6A3F5086B958A442 /* PayPalConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
+		D4B32587F3BBA7413C6BD951F60CC432 /* FontAwesomeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesomeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3CDBC1DE4E59CE7A7492B315A778E5 /* FontAwesomeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeKit.xcconfig; sourceTree = "<group>"; };
 		DAB851C2F0FA49D84D0DD89B7ABD57B3 /* TGLExposedLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGLExposedLayout.h; path = TGLStackedViewController/TGLExposedLayout.h; sourceTree = "<group>"; };
 		DD29D0C5D9CC30249E1E1931C39A3095 /* Pods-PayCode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayCode-acknowledgements.plist"; sourceTree = "<group>"; };
-		E33009C6DCC4547561F465AF3B13083B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5BDCAFA0C094F48CD8DFCA51C4CA5B /* FAKIonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
+		E50A9A78B88B3E324B027F9C39DC1D42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E5719F6F763C9E23F743C5D1A7415365 /* PayPalPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = PayPalMobile/PayPalPayment.h; sourceTree = "<group>"; };
+		E671823D078836B173517F9B60083740 /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
 		E6D7C96AB8C2B462888DA90F536F24BE /* SVProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SVProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
-		EC39633A16182A57EBB5C9CBA8989573 /* FAKIonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
-		EC9C35BCF3333C31BE93BC34D34D3C03 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		E738FC3F02BC90F848F8EE7B063A5751 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		EC9735521DB306B0C309DB53D8710B32 /* FAKZocial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKZocial.h; path = FontAwesomeKit/FAKZocial.h; sourceTree = "<group>"; };
+		ECA7AAF50759E6A26E392AFEF003D534 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
 		EDE3B54441365AA33437BDF581F6CBC3 /* Pods-PayCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PayCode.modulemap"; sourceTree = "<group>"; };
+		EEE10029A45033B2CB2D5CEAEE1608E6 /* FontAwesomeKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FontAwesomeKit-Private.xcconfig"; sourceTree = "<group>"; };
 		F0779D843BDE4B04633640B041484B27 /* TGLStackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGLStackedViewController.h; path = TGLStackedViewController/TGLStackedViewController.h; sourceTree = "<group>"; };
 		F0B7254B664F5D058946DD63CC94C36E /* TGLStackedViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGLStackedViewController-umbrella.h"; sourceTree = "<group>"; };
-		F3663D3AD7F2B9D4A269E114849F1219 /* TGLStackedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TGLStackedViewController.xcconfig; sourceTree = "<group>"; };
-		F5A348161F3C22C8B293B35DFF78D555 /* FontAwesomeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeKit.h; path = FontAwesomeKit/FontAwesomeKit.h; sourceTree = "<group>"; };
-		FA9341FDE57652976C087AA4269EB589 /* FAKZocial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKZocial.h; path = FontAwesomeKit/FAKZocial.h; sourceTree = "<group>"; };
-		FB63E695292680850A902BF1AB63A4CA /* CardIOView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = CardIO/CardIOView.h; sourceTree = "<group>"; };
-		FE652C4AC8B922E3116FF37245FB8976 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F49EC4759EB9D04011AA40578D4E42E8 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F8651FE2DCCC196DD7BEDBC5CCB5835D /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		FAC8E37B731DDDEA6C9C76DB99C07FF8 /* FontAwesomeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeKit-dummy.m"; sourceTree = "<group>"; };
+		FCB438AE01A9A815A64CB7BAA9B5CB9F /* FAKIonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,24 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9098ECA90DD50BCF0839533BD0A96FD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19E31DA721C9C78BE2AB8EE461719158 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E002BE8DD1E788FA44676362CF5407E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AAF98FA657424D9CF93740C3E1B1154 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE2B83D1834AE6E3D48B6821F5524995 /* CoreText.framework in Frameworks */,
-				1C99AB6FDA8371C233785485D68DE64D /* Foundation.framework in Frameworks */,
-				E95A3C9C2B40A6C71A8B4BD511383779 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,27 +228,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC4C56381732589A77A29C9660E9C2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB6698900A885BBD95F92AE9B28087F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9A27EDEFBFC6D977A3705B9E4E2A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FD43D270605ED3868E42422942CEFE /* CoreText.framework in Frameworks */,
+				80BEDEA3EE17A665D31E9A64E7B88609 /* Foundation.framework in Frameworks */,
+				C9B61727FD86200DFFA561766543320A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E6F72F428B2E9419307B4B34D62E6BF /* FontAwesome */ = {
+		09009978B67307C35B9910BC0CB3A518 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A2D10FD4E1C7F67EE03C842F66D4432F /* FAKFontAwesome.h */,
-				B00DA758B218E595DD68399339BD4384 /* FAKFontAwesome.m */,
-				52C6424015218D4CA538998C99307FB5 /* Resources */,
+				3479027AC0C173469E28831ADAA9E2DE /* ionicons.ttf */,
 			);
-			name = FontAwesome;
-			sourceTree = "<group>";
-		};
-		0EFD709B7A5055F3CCCB4FCBB0051087 /* FoundationIcons */ = {
-			isa = PBXGroup;
-			children = (
-				2C1BBFFFC5AA88AF6C884E62CE5AB686 /* FAKFoundationIcons.h */,
-				A3DA9107B88388D4B6161173D672A218 /* FAKFoundationIcons.m */,
-				64EF7760E3A5811C5722C466FE2685CE /* Resources */,
-			);
-			name = FoundationIcons;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -289,23 +283,37 @@
 			path = "Target Support Files/Pods-PayCode";
 			sourceTree = "<group>";
 		};
+		29FBBA3C95EF93DA60C8B1BB36BCD812 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				328C5C16529970384DF08F8A97791935 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2B315DDA8CB918C3CBD581B95AB77375 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				91039D26B7B6388DE7235692C2F50B9D /* CoreText.framework */,
+				66CB864B9954ACB2BA51E27A73C289C2 /* CoreText.framework */,
 				955FABC342756D4F062F0454A1502FE9 /* Foundation.framework */,
 				C0A48C2A51E21E980080AE28105B8C03 /* QuartzCore.framework */,
-				76B48513323396D1EF179334DE4DB197 /* UIKit.framework */,
+				E50A9A78B88B3E324B027F9C39DC1D42 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		3EA4A137B0527A2153263E2083660302 /* Resources */ = {
+		36CB6B86EE707134F84CADD093D77320 /* FontAwesomeKit */ = {
 			isa = PBXGroup;
 			children = (
-				B18CEE512966475CBE95BC424CD5C6DC /* zocial-regular-webfont.ttf */,
+				979AEC8EAA0456AADF94D61EA267B5C1 /* FontAwesomeKit.h */,
+				C2FBC35D29006932FAAC11D81B2B9659 /* Core */,
+				8EFF6A1FDF48BC3F430C56E445B97D35 /* FontAwesome */,
+				FE6975DF606F7D35005202FC7F5ADA24 /* FoundationIcons */,
+				9DFA65F2E9A1287ED11D6AAB03A25118 /* IonIcons */,
+				FED4547D677C47F4F21380427C3164B7 /* Support Files */,
+				F4D89E12DF0AD495D1659B61CB4C8498 /* Zocial */,
 			);
-			name = Resources;
+			path = FontAwesomeKit;
 			sourceTree = "<group>";
 		};
 		449DBA590DD6177B629AB0846B35E9EB /* Targets Support Files */ = {
@@ -316,39 +324,30 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		44DAA9605487A2C5E1357B10ACEF9242 /* Support Files */ = {
+		51E0CF71C44708132A09FFA888770D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A63244B5BAF37BE79C058DB5C6D8762C /* Info.plist */,
-				490C6108DE0A2A7D413C4853EA41D49A /* SVProgressHUD.modulemap */,
-				A8A24ADE4BFCCC4B072E74F219C90E5B /* SVProgressHUD.xcconfig */,
-				E6D7C96AB8C2B462888DA90F536F24BE /* SVProgressHUD-Private.xcconfig */,
-				27179B7FA11C83574FAC0D1A42630A67 /* SVProgressHUD-dummy.m */,
-				0E7F51839494B3C5ABF5778434429940 /* SVProgressHUD-prefix.pch */,
-				CF4872AC631E92D0FC3E12DBFC7B0523 /* SVProgressHUD-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
-		52C6424015218D4CA538998C99307FB5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9B1A73B19D6207ECE70233D7533D3A06 /* FontAwesome.otf */,
+				2AF29BDD654EB14AD2C4DBAC9C9308CA /* zocial-regular-webfont.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		5330EA739DFBE95F840E3968CDB4B553 /* Core */ = {
+		68D2981F5180C7EBB2B5D89B702A52A4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				54ECC8ACBB3825CC8D7FB410F36938CD /* FAKIcon.h */,
-				68E6D7B197747F4F65BF85F7082A71DD /* FAKIcon.m */,
+				1E2EB46C1AC59DCE71459990E15296BE /* Info.plist */,
+				358000C6CE25B4FAC6626F009A016466 /* TGLStackedViewController.modulemap */,
+				5511BDEB2C6B6B4D5F71BEEBF8C3A499 /* TGLStackedViewController.xcconfig */,
+				342B5FC41B52F5A57D735782725F8380 /* TGLStackedViewController-Private.xcconfig */,
+				72D9A6082A3A275AEEDB02BAADBF053B /* TGLStackedViewController-dummy.m */,
+				CB5AB7B31AFB22423C8E861968EF88BD /* TGLStackedViewController-prefix.pch */,
+				F0B7254B664F5D058946DD63CC94C36E /* TGLStackedViewController-umbrella.h */,
 			);
-			name = Core;
+			name = "Support Files";
+			path = "../Target Support Files/TGLStackedViewController";
 			sourceTree = "<group>";
 		};
-		64B3FAB6C9DD72978BAB3EAC4540592D /* TGLStackedViewController */ = {
+		68F81D2BF63D576DAEDF8EB2803D1A0C /* TGLStackedViewController */ = {
 			isa = PBXGroup;
 			children = (
 				DAB851C2F0FA49D84D0DD89B7ABD57B3 /* TGLExposedLayout.h */,
@@ -357,35 +356,43 @@
 				2D0BC5D8A30437EF9B254403EB5D9C5E /* TGLStackedLayout.m */,
 				F0779D843BDE4B04633640B041484B27 /* TGLStackedViewController.h */,
 				779A892481E434D0B80ABC91803D58D2 /* TGLStackedViewController.m */,
-				C3ACAC4E1103F7B78D14E1B0FC408924 /* Support Files */,
+				68D2981F5180C7EBB2B5D89B702A52A4 /* Support Files */,
 			);
 			path = TGLStackedViewController;
 			sourceTree = "<group>";
 		};
-		64EF7760E3A5811C5722C466FE2685CE /* Resources */ = {
+		7389F39D9C0FC14D2408D92893E1AA40 /* PayPal-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				7C2601D778D7FCFE9AE629C17A48A7C9 /* foundation-icons.ttf */,
+				841BC91AF6429F36F58328440035AE0F /* CardIO.h */,
+				118407BE4E2F9E9A13918727C8246263 /* CardIOCreditCardInfo.h */,
+				1F19580BC2FAB0E9290250E5CEBA2535 /* CardIODetectionMode.h */,
+				035B0689D7DF4568763D34D7145DBE29 /* CardIOPaymentViewController.h */,
+				155F86AEBD2074A0B7E7B9ECFDEEC6DE /* CardIOPaymentViewControllerDelegate.h */,
+				8643C20A765125CFFC668FC68E30D6E2 /* CardIOUtilities.h */,
+				9228055922AA70670E04F94528AF29D7 /* CardIOView.h */,
+				0A64599F01187E23AED342D1B2DF4CFC /* CardIOViewDelegate.h */,
+				D1521BBEC515A07A6A3F5086B958A442 /* PayPalConfiguration.h */,
+				47EE024FFF73BDEA49F44CDB7D77AA6C /* PayPalFuturePaymentViewController.h */,
+				87E19DE657DD0B78FF6D04D2E973441E /* PayPalMobile.h */,
+				53E4E1D5D7130B6A82497C60BF5CA159 /* PayPalOAuthScopes.h */,
+				E5719F6F763C9E23F743C5D1A7415365 /* PayPalPayment.h */,
+				1ED9E9A2838BC2857B428E54152F6E9E /* PayPalPaymentViewController.h */,
+				1E4BC8179E0E9DD810C5E6FADC686417 /* PayPalProfileSharingViewController.h */,
 			);
-			name = Resources;
+			path = "PayPal-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		7572014593DB04F87257C74B3DDA714A /* Resources */ = {
+		7ADCAAAD51B9CE847800767BCAEF1639 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				702C93CA3D4B1265FFB6C3E0599ACD7C /* ionicons.ttf */,
+				A11AC4F4A50D5A8C727754D716D0CAE7 /* Alamofire */,
+				36CB6B86EE707134F84CADD093D77320 /* FontAwesomeKit */,
+				7389F39D9C0FC14D2408D92893E1AA40 /* PayPal-iOS-SDK */,
+				A0DCE38D1BF83F5C50D59592F57BD439 /* SVProgressHUD */,
+				68F81D2BF63D576DAEDF8EB2803D1A0C /* TGLStackedViewController */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7C5A4B9CC8BE57A20B33649B765988DF /* IonIcons */ = {
-			isa = PBXGroup;
-			children = (
-				8CB9109F3ECDD499DB951E10706D0D1C /* FAKIonIcons.h */,
-				EC39633A16182A57EBB5C9CBA8989573 /* FAKIonIcons.m */,
-				7572014593DB04F87257C74B3DDA714A /* Resources */,
-			);
-			name = IonIcons;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -393,123 +400,126 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				FC51062649C7114AE8C1977CD5B2DEC8 /* Pods */,
+				7ADCAAAD51B9CE847800767BCAEF1639 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				449DBA590DD6177B629AB0846B35E9EB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85C12787D01D5A1751331555D4A88F6B /* Frameworks */ = {
+		85E90A8A2DD492CF517317E9F1E5884D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0995786CCDF687D1EC75D4A3E2794BB4 /* libCardIO.a */,
+				43FFDFFF4E29F02E0D41F63A42C67A26 /* foundation-icons.ttf */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		915B933B397CFB4044B633E2CCA032C6 /* Alamofire */ = {
+		884B2D024E3094DD53F2CCED3E3A87B5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				64F1EB95C05417109A9FC9EDCD976E2C /* Alamofire.swift */,
-				A7F24A6AADADE717B9C8623BB152315C /* Download.swift */,
-				27AD2A8EBFF6CA73A874CDD7F6884211 /* Error.swift */,
-				A9E8615886212F938891A155BCD17C0F /* Manager.swift */,
-				BB84C64B5EBDE6526F375A5BC9FD23C9 /* MultipartFormData.swift */,
-				0CDEF912C355F43B89070D0FFF90518D /* ParameterEncoding.swift */,
-				493E008D101737D2DB2018F993E88FD2 /* Request.swift */,
-				A39E6FF5EC2A7347D9260D3C3BC51E74 /* ResponseSerialization.swift */,
-				1F34F1386E0A01AA5FCAB410BC7985C5 /* Result.swift */,
-				9B9F6BE9243FE83E7D36A194BC51B815 /* ServerTrustPolicy.swift */,
-				6B80EBB36177773935B61F29EF63224C /* Stream.swift */,
-				B5543EE84FB3F113962E34D3C5BA4151 /* Upload.swift */,
-				EC9C35BCF3333C31BE93BC34D34D3C03 /* Validation.swift */,
-				F570D97F893ACC24AECBE630AA2BF811 /* Support Files */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		9C7B28DF37C6412E8C09F048D434FC07 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				57806C3EB0D813BE6AE85654A68F6059 /* FontAwesomeKit.modulemap */,
-				30A0199C3D06C92DE1320F1011E2C2C6 /* FontAwesomeKit.xcconfig */,
-				A4C252BE98079DDF03AE5DCCF52CD059 /* FontAwesomeKit-Private.xcconfig */,
-				10B048536E815E06AC62C2E012F66B5A /* FontAwesomeKit-dummy.m */,
-				7A55CEF8EE1BC5C477EBC303E4E8A9AD /* FontAwesomeKit-prefix.pch */,
-				0309D0B8F6D57141208ACE4DE45A3AE1 /* FontAwesomeKit-umbrella.h */,
-				CFEE277121ABA57067DF72E45CF76F01 /* Info.plist */,
+				F49EC4759EB9D04011AA40578D4E42E8 /* Alamofire.modulemap */,
+				75EFE05F293976702048260B793289DA /* Alamofire.xcconfig */,
+				4BF9C21F2E01701E1610FD41DE46D476 /* Alamofire-Private.xcconfig */,
+				26E3DC72B66C6D4DF9CAACD0536415C4 /* Alamofire-dummy.m */,
+				3E07AA6CA66AAE62A178F5772CCFDC3C /* Alamofire-prefix.pch */,
+				4BA3AD8D523535BCBB1B4CE2142A1BFB /* Alamofire-umbrella.h */,
+				573A637F26D7229367B8F6BB5D0143D1 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/FontAwesomeKit";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		A34983989D782D0FCE52717BBFB5C06A /* SVProgressHUD */ = {
+		8B4DC4B00156A071F7D4B5DB86EE5F63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECA7AAF50759E6A26E392AFEF003D534 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8EFF6A1FDF48BC3F430C56E445B97D35 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				79ACAF1466C9CC700437FD2B3F9A6FB5 /* FAKFontAwesome.h */,
+				18C70B9121AB4CE15F9DB9488292AEC8 /* FAKFontAwesome.m */,
+				8B4DC4B00156A071F7D4B5DB86EE5F63 /* Resources */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		999F9B828A34919A9632D9703347EB83 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E3D1A996D791986FFF5C6B8997D0C9C /* Info.plist */,
+				19CC76B8BF858A595AFC3B26556C0CB7 /* SVProgressHUD.modulemap */,
+				0CC238E9F56E6DAA5609D0A4ED6A08C2 /* SVProgressHUD.xcconfig */,
+				E6D7C96AB8C2B462888DA90F536F24BE /* SVProgressHUD-Private.xcconfig */,
+				27179B7FA11C83574FAC0D1A42630A67 /* SVProgressHUD-dummy.m */,
+				72B588B410505D6726B5CEECB29EDA18 /* SVProgressHUD-prefix.pch */,
+				CF4872AC631E92D0FC3E12DBFC7B0523 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		9DFA65F2E9A1287ED11D6AAB03A25118 /* IonIcons */ = {
+			isa = PBXGroup;
+			children = (
+				DD5BDCAFA0C094F48CD8DFCA51C4CA5B /* FAKIonIcons.h */,
+				FCB438AE01A9A815A64CB7BAA9B5CB9F /* FAKIonIcons.m */,
+				09009978B67307C35B9910BC0CB3A518 /* Resources */,
+			);
+			name = IonIcons;
+			sourceTree = "<group>";
+		};
+		A0DCE38D1BF83F5C50D59592F57BD439 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
 				D06DC1A49820B525E8075FB9B854E49A /* SVIndefiniteAnimatedView.h */,
 				160FAFDD01615679A73D463CAB98FD9B /* SVIndefiniteAnimatedView.m */,
 				5130A69E51586F77FF832D1282C3798F /* SVProgressHUD.h */,
 				A49D155FB7467254D0690132E4CF52A6 /* SVProgressHUD.m */,
-				B84A6AB6550A92A0386FB652D2F2D7E4 /* Resources */,
-				44DAA9605487A2C5E1357B10ACEF9242 /* Support Files */,
+				29FBBA3C95EF93DA60C8B1BB36BCD812 /* Resources */,
+				999F9B828A34919A9632D9703347EB83 /* Support Files */,
 			);
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		B56118CDF4063EA868C1F30940967FA4 /* CardIO */ = {
+		A11AC4F4A50D5A8C727754D716D0CAE7 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				0BE17CB8D541E719F52336A0B052F07F /* CardIO.h */,
-				5E2EA06A322EDD33C6C367966C42D4FC /* CardIOCreditCardInfo.h */,
-				63317444D4532BB5276C6A58CDEC5478 /* CardIODetectionMode.h */,
-				96D03A43C03EFB6E4FEEAE8AAF3DA184 /* CardIOPaymentViewController.h */,
-				1D545869F02E179B8BC4E671C9EABAC8 /* CardIOPaymentViewControllerDelegate.h */,
-				43CC7F49EE6B3B17025946BE807FDA30 /* CardIOUtilities.h */,
-				FB63E695292680850A902BF1AB63A4CA /* CardIOView.h */,
-				A8A1FF8F594BD7550442A74DEA7D35AF /* CardIOViewDelegate.h */,
-				85C12787D01D5A1751331555D4A88F6B /* Frameworks */,
+				41BD74C1A964033201D96DE0B55E2BC0 /* Alamofire.swift */,
+				479F6400C784DB82100D8C95ADB00502 /* Download.swift */,
+				99F3CB28CFE797D73F48B3E6D8300F38 /* Error.swift */,
+				6435F8A211B4A1DB15BD36C5BC9D7E2A /* Manager.swift */,
+				587B3420DAF12B3F62D3563A1F8E3C21 /* MultipartFormData.swift */,
+				A7990B052F3547E3E51FECA55064436D /* ParameterEncoding.swift */,
+				483CAF67DDD165E3445F147AB4CF4FB5 /* Request.swift */,
+				E738FC3F02BC90F848F8EE7B063A5751 /* ResponseSerialization.swift */,
+				A4E069152A9357E2833CE5C53DC6A299 /* Result.swift */,
+				F8651FE2DCCC196DD7BEDBC5CCB5835D /* ServerTrustPolicy.swift */,
+				C9090983EAD89452DB5ECCA86B6BDA69 /* Stream.swift */,
+				3C75CB8B5322EE1EC246E7AB4DDF632D /* Upload.swift */,
+				A0C194BEB5A7C41354AD3E247C837BCD /* Validation.swift */,
+				884B2D024E3094DD53F2CCED3E3A87B5 /* Support Files */,
 			);
-			path = CardIO;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		B5B23EDEB81734EF160C96C62E7C4224 /* Zocial */ = {
+		C2FBC35D29006932FAAC11D81B2B9659 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FA9341FDE57652976C087AA4269EB589 /* FAKZocial.h */,
-				C2737FBA8E65EDFEBBF1B1F1B29BDFD6 /* FAKZocial.m */,
-				3EA4A137B0527A2153263E2083660302 /* Resources */,
+				E671823D078836B173517F9B60083740 /* FAKIcon.h */,
+				6F8F4DF62B2622D6C1CC18BB9B71261A /* FAKIcon.m */,
 			);
-			name = Zocial;
-			sourceTree = "<group>";
-		};
-		B84A6AB6550A92A0386FB652D2F2D7E4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				328C5C16529970384DF08F8A97791935 /* SVProgressHUD.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C3ACAC4E1103F7B78D14E1B0FC408924 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A70C3567663BCB7EFD8373CAEC27F436 /* Info.plist */,
-				3185FF6091384526B8F56376CB517E94 /* TGLStackedViewController.modulemap */,
-				F3663D3AD7F2B9D4A269E114849F1219 /* TGLStackedViewController.xcconfig */,
-				342B5FC41B52F5A57D735782725F8380 /* TGLStackedViewController-Private.xcconfig */,
-				72D9A6082A3A275AEEDB02BAADBF053B /* TGLStackedViewController-dummy.m */,
-				4669D3747775EA7E8902C9B150091367 /* TGLStackedViewController-prefix.pch */,
-				F0B7254B664F5D058946DD63CC94C36E /* TGLStackedViewController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TGLStackedViewController";
+			name = Core;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9259A4D8FA456DE5FF9537FFB2487EFF /* Alamofire.framework */,
-				556CD34035C067152D581B5D856AC323 /* FontAwesomeKit.framework */,
+				0962005C0E180803D0683701BD157D2F /* Alamofire.framework */,
+				D4B32587F3BBA7413C6BD951F60CC432 /* FontAwesomeKit.framework */,
 				04CDB679337E78D457F1458C953965C8 /* Pods_PayCode.framework */,
 				B5041E49D2D85055674F5469B43E410C /* SVProgressHUD.framework */,
 				CA6BB3761694188164402A724AB5AC07 /* TGLStackedViewController.framework */,
@@ -517,69 +527,63 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7B9AC59A08EF72BD5CE70DAE6022790 /* FontAwesomeKit */ = {
+		F4D89E12DF0AD495D1659B61CB4C8498 /* Zocial */ = {
 			isa = PBXGroup;
 			children = (
-				F5A348161F3C22C8B293B35DFF78D555 /* FontAwesomeKit.h */,
-				5330EA739DFBE95F840E3968CDB4B553 /* Core */,
-				0E6F72F428B2E9419307B4B34D62E6BF /* FontAwesome */,
-				0EFD709B7A5055F3CCCB4FCBB0051087 /* FoundationIcons */,
-				7C5A4B9CC8BE57A20B33649B765988DF /* IonIcons */,
-				9C7B28DF37C6412E8C09F048D434FC07 /* Support Files */,
-				B5B23EDEB81734EF160C96C62E7C4224 /* Zocial */,
+				EC9735521DB306B0C309DB53D8710B32 /* FAKZocial.h */,
+				1C614BEB5316D24B2360D7151FF13171 /* FAKZocial.m */,
+				51E0CF71C44708132A09FFA888770D5E /* Resources */,
 			);
-			path = FontAwesomeKit;
+			name = Zocial;
 			sourceTree = "<group>";
 		};
-		F570D97F893ACC24AECBE630AA2BF811 /* Support Files */ = {
+		FE6975DF606F7D35005202FC7F5ADA24 /* FoundationIcons */ = {
 			isa = PBXGroup;
 			children = (
-				FE652C4AC8B922E3116FF37245FB8976 /* Alamofire.modulemap */,
-				53D25319D8D2AC9BB6097274DF4907E1 /* Alamofire.xcconfig */,
-				1C9D5F109536849420D3948DB3F2DF1F /* Alamofire-Private.xcconfig */,
-				D736C9082AC2E2EDA7A9859F5661B326 /* Alamofire-dummy.m */,
-				632DF10033C255711AE154356495124E /* Alamofire-prefix.pch */,
-				9C0681E841683FCCE540E3FDD484979E /* Alamofire-umbrella.h */,
-				E33009C6DCC4547561F465AF3B13083B /* Info.plist */,
+				811369F1D5734BE808E15D2ADC89C5E0 /* FAKFoundationIcons.h */,
+				974C254E380540FC030B1CFAE0C7929D /* FAKFoundationIcons.m */,
+				85E90A8A2DD492CF517317E9F1E5884D /* Resources */,
+			);
+			name = FoundationIcons;
+			sourceTree = "<group>";
+		};
+		FED4547D677C47F4F21380427C3164B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11F2A832FF697CBEEE1555C42D0395C8 /* FontAwesomeKit.modulemap */,
+				DA3CDBC1DE4E59CE7A7492B315A778E5 /* FontAwesomeKit.xcconfig */,
+				EEE10029A45033B2CB2D5CEAEE1608E6 /* FontAwesomeKit-Private.xcconfig */,
+				FAC8E37B731DDDEA6C9C76DB99C07FF8 /* FontAwesomeKit-dummy.m */,
+				776292EF337638BAD105FA510579D3CF /* FontAwesomeKit-prefix.pch */,
+				96415D3F5164CC97AD7ADC160BBE22E3 /* FontAwesomeKit-umbrella.h */,
+				884AE09F69F67EAE296C5852AEC8FF52 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		FC51062649C7114AE8C1977CD5B2DEC8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				915B933B397CFB4044B633E2CCA032C6 /* Alamofire */,
-				B56118CDF4063EA868C1F30940967FA4 /* CardIO */,
-				D7B9AC59A08EF72BD5CE70DAE6022790 /* FontAwesomeKit */,
-				A34983989D782D0FCE52717BBFB5C06A /* SVProgressHUD */,
-				64B3FAB6C9DD72978BAB3EAC4540592D /* TGLStackedViewController */,
-			);
-			name = Pods;
+			path = "../Target Support Files/FontAwesomeKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D665DBFA20F1C87F3AACBBBA24F7453 /* Headers */ = {
+		30921A8194E40219B8C8ADC0DEBC91DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A4CD3C8097C6F1BAACD2A4E0BFDF96 /* FAKFontAwesome.h in Headers */,
-				BE579BFACBB7E8269D5AE5DC0A747B5F /* FAKFoundationIcons.h in Headers */,
-				47AB91B70F35BA70B9CCC1D89B44E27F /* FAKIcon.h in Headers */,
-				3022079DCC9B44FB9BD819A5AE9BB744 /* FAKIonIcons.h in Headers */,
-				CE80C533037133616C9D000383FCBE4C /* FAKZocial.h in Headers */,
-				EAC14015AC970CF3036489AEE1C7B0DD /* FontAwesomeKit-umbrella.h in Headers */,
-				BF74156F1BE622E70190F59C65562CBF /* FontAwesomeKit.h in Headers */,
+				CF2F98455B3B774A2F95E7BD13723813 /* FAKFontAwesome.h in Headers */,
+				D870EE89459B12C462A6CAC04D8200E2 /* FAKFoundationIcons.h in Headers */,
+				68B63139B398AF02400517DFFD13C11C /* FAKIcon.h in Headers */,
+				A49D0CEFD1651074AB471C9D37EF2A10 /* FAKIonIcons.h in Headers */,
+				835CF38B582530557A237881057DE42B /* FAKZocial.h in Headers */,
+				88DB756D123154FCF197979AA6E0AD1C /* FontAwesomeKit-umbrella.h in Headers */,
+				004CAB6D236EA3DF7C548CC9FA8D73E5 /* FontAwesomeKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30BD23EDACC33A0A25487690297E6B50 /* Headers */ = {
+		4547BF7D4703FA1B7F6B0D6134779D1A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B325C1D3A3311F311CEF49995C4C86FF /* Alamofire-umbrella.h in Headers */,
+				25D7EEDE786D9DB1F901FA350AE97389 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,22 +619,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3B20682110B88BB32BA1340E287FAAED /* FontAwesomeKit */ = {
+		0F77229D349FB65A7C9080933AB945DF /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84BEC7E19FFF533677E2EA87F00B49E5 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
+			buildConfigurationList = 62BCC522A784669FC21C0598DD5795B3 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				C1C7169909AC538DD50D3D8A1B7E4AA3 /* Sources */,
-				5AAF98FA657424D9CF93740C3E1B1154 /* Frameworks */,
-				2D665DBFA20F1C87F3AACBBBA24F7453 /* Headers */,
-				3FB5003F665AB215CBD85A95D0DF70DE /* Resources */,
+				D9F9056FE56630E3E39D3CAFBCF90122 /* Sources */,
+				AC4C56381732589A77A29C9660E9C2AD /* Frameworks */,
+				4547BF7D4703FA1B7F6B0D6134779D1A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FontAwesomeKit;
-			productName = FontAwesomeKit;
-			productReference = 556CD34035C067152D581B5D856AC323 /* FontAwesomeKit.framework */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 0962005C0E180803D0683701BD157D2F /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		538B3E50AF13BB55318D9D1014A0F0EF /* Pods-PayCode */ = {
@@ -644,10 +647,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				75A4A28FB67AE89E41A5AB8EC446DB17 /* PBXTargetDependency */,
-				9F92C3095CDCABA06995A91CF4F4B6D9 /* PBXTargetDependency */,
-				912FB02F1514549E649E17D9476C8F36 /* PBXTargetDependency */,
-				05989B1ED3E9B32FFCCC1FC5FC6FBA01 /* PBXTargetDependency */,
+				1719010B65DB6EEF5C5B50C6E05384FF /* PBXTargetDependency */,
+				BECEF4426E01DE28195857988A419157 /* PBXTargetDependency */,
+				FAED8B4E2462BC4DA1D295108E3C5CF3 /* PBXTargetDependency */,
+				BA4F7E824692A738D13DE34A59741681 /* PBXTargetDependency */,
 			);
 			name = "Pods-PayCode";
 			productName = "Pods-PayCode";
@@ -672,21 +675,22 @@
 			productReference = B5041E49D2D85055674F5469B43E410C /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CD019CC68F0AD5B6B71D46F7DFAD67C9 /* Alamofire */ = {
+		B85BAA936E50665449890C28F3ADB5E3 /* FontAwesomeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D647256E3FBE156EEAFCD255A733D304 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = 519A30641CA489C44B9DAFF99E150425 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
 			buildPhases = (
-				C9F9D597B11A7795FE9C782E220E3544 /* Sources */,
-				19E31DA721C9C78BE2AB8EE461719158 /* Frameworks */,
-				30BD23EDACC33A0A25487690297E6B50 /* Headers */,
+				65A891B077CE539473AB33B385A39388 /* Sources */,
+				FA9A27EDEFBFC6D977A3705B9E4E2A6B /* Frameworks */,
+				30921A8194E40219B8C8ADC0DEBC91DA /* Headers */,
+				C6AC6B077EFF6E6D24E69C0F75FD1CB0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = 9259A4D8FA456DE5FF9537FFB2487EFF /* Alamofire.framework */;
+			name = FontAwesomeKit;
+			productName = FontAwesomeKit;
+			productReference = D4B32587F3BBA7413C6BD951F60CC432 /* FontAwesomeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D1BACE37ACCCE0CDCF0D9797D138FF6F /* TGLStackedViewController */ = {
@@ -727,8 +731,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD019CC68F0AD5B6B71D46F7DFAD67C9 /* Alamofire */,
-				3B20682110B88BB32BA1340E287FAAED /* FontAwesomeKit */,
+				0F77229D349FB65A7C9080933AB945DF /* Alamofire */,
+				B85BAA936E50665449890C28F3ADB5E3 /* FontAwesomeKit */,
 				538B3E50AF13BB55318D9D1014A0F0EF /* Pods-PayCode */,
 				A064B75A9838606659BB57FE5AC8A101 /* SVProgressHUD */,
 				D1BACE37ACCCE0CDCF0D9797D138FF6F /* TGLStackedViewController */,
@@ -737,22 +741,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3FB5003F665AB215CBD85A95D0DF70DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED4344AF0B67221FD1711B25C03FC046 /* FontAwesome.otf in Resources */,
-				D3744910EA593307E4267FFD0E7B7894 /* foundation-icons.ttf in Resources */,
-				3A09BDFB4D973E122B3956BDD45BB40D /* ionicons.ttf in Resources */,
-				EA3A8324E2FB9DB27FD7C95852260D1E /* zocial-regular-webfont.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4E623279ECD2F7A3EACBDF63EE6C6A48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				90609EF96AE1F72C5CF3B896A227779B /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6AC6B077EFF6E6D24E69C0F75FD1CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F750469E93A33A125A0367673B8DC91 /* FontAwesome.otf in Resources */,
+				B52F786DCDB63B35362B6842C687D485 /* foundation-icons.ttf in Resources */,
+				8D93211B91515C297B813FCDD6397444 /* ionicons.ttf in Resources */,
+				88B0CFEB5406DA7EC4851B016BCA1293 /* zocial-regular-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +771,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65A891B077CE539473AB33B385A39388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCCFE0C4D09C9801E86B59DC3BF0544 /* FAKFontAwesome.m in Sources */,
+				547108FF497628AF5ECF9C5FE2269936 /* FAKFoundationIcons.m in Sources */,
+				F634CCFBE536E7387710BE2175E0063F /* FAKIcon.m in Sources */,
+				18390C5BA798C97FF3AC7FDBC1685A81 /* FAKIonIcons.m in Sources */,
+				7BD909E1EDF1684692165B070D129DAE /* FAKZocial.m in Sources */,
+				639ACB6EFB87E3824EF229E330DCDBCD /* FontAwesomeKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE61CF5E10429DA9728C4B1295982CA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -777,37 +794,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1C7169909AC538DD50D3D8A1B7E4AA3 /* Sources */ = {
+		D9F9056FE56630E3E39D3CAFBCF90122 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956A65CB9A08FACBA862AA157815FB0C /* FAKFontAwesome.m in Sources */,
-				122092771FBAB077A4F4E2E89E9924A9 /* FAKFoundationIcons.m in Sources */,
-				400C7DC0CB1EDA95781D39AC73221769 /* FAKIcon.m in Sources */,
-				C3C4229D4947913EF852C58566D74AC6 /* FAKIonIcons.m in Sources */,
-				A1B6C8CA1FAA6C8097AC32CD9CE0FFCC /* FAKZocial.m in Sources */,
-				316F3D4EE5BD6A00D34F1E9B8C6A03CA /* FontAwesomeKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9F9D597B11A7795FE9C782E220E3544 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A9A1E9DD84105A8CE6432B4A72F0A23 /* Alamofire-dummy.m in Sources */,
-				1EFAD07EEBA658AF2B3F14EB1CE9D937 /* Alamofire.swift in Sources */,
-				B56695FBE29EBE6B93A2E302956F8017 /* Download.swift in Sources */,
-				439961B2AFFB91AA31761F115B1F6CC3 /* Error.swift in Sources */,
-				104F2B06EC21B69D88BAA25DAC76D5BE /* Manager.swift in Sources */,
-				A43B5BBD6682831CD3FB49EE81E1230E /* MultipartFormData.swift in Sources */,
-				564E3A6791354844BE406FB0B3B608A5 /* ParameterEncoding.swift in Sources */,
-				190246CC2CC6D3176A2A7AA4E506EEA6 /* Request.swift in Sources */,
-				B40A2E1EA1B88B03A007A104BD25CD09 /* ResponseSerialization.swift in Sources */,
-				4AFD73CA52AE620DF43B5C2750F613B5 /* Result.swift in Sources */,
-				F0A0B16F0404D0C89A32F2318E78C1D4 /* ServerTrustPolicy.swift in Sources */,
-				A3B8244FAB4E899E5D9EAEF2DB7EAC27 /* Stream.swift in Sources */,
-				B12F5BC1C1186E60EF3C1F672356DCA0 /* Upload.swift in Sources */,
-				E39CFDB63867520F07F92941DB9F118D /* Validation.swift in Sources */,
+				C2608AA2351A6B062CBA60CB3CF4657A /* Alamofire-dummy.m in Sources */,
+				6D2BC40C99D74E4082AD5CB20A00DD7F /* Alamofire.swift in Sources */,
+				0B694BACA1BCC0F26DEE08319240BA59 /* Download.swift in Sources */,
+				BEC5DDD8150174FEC86155D556FE4AFA /* Error.swift in Sources */,
+				8D0C850398D429DC0F32CD16BCDBAB4E /* Manager.swift in Sources */,
+				7EFC5BCF1FA1BFF531754F8E4F1C3B3E /* MultipartFormData.swift in Sources */,
+				35638BA29F358DF26D21FBF9F5B2D3DF /* ParameterEncoding.swift in Sources */,
+				7C26A9B0B3D5107276F47587209B6D48 /* Request.swift in Sources */,
+				F3321D7E46A49FD1B66900DAD1735C7C /* ResponseSerialization.swift in Sources */,
+				89E395FF6E3EBAD0E8E514AE2D67F77E /* Result.swift in Sources */,
+				CB3A5192BE30F14B74DA69ADBB737B57 /* ServerTrustPolicy.swift in Sources */,
+				43708DB0CD0F7A4D952996FD490E1086 /* Stream.swift in Sources */,
+				07DD36EBD3473D7C001190EAC1D10E07 /* Upload.swift in Sources */,
+				69F20880C96CB8B9EAD653AFA8F46646 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,88 +829,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05989B1ED3E9B32FFCCC1FC5FC6FBA01 /* PBXTargetDependency */ = {
+		1719010B65DB6EEF5C5B50C6E05384FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 0F77229D349FB65A7C9080933AB945DF /* Alamofire */;
+			targetProxy = B3405102851F544BFCF435FF5F428710 /* PBXContainerItemProxy */;
+		};
+		BA4F7E824692A738D13DE34A59741681 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TGLStackedViewController;
 			target = D1BACE37ACCCE0CDCF0D9797D138FF6F /* TGLStackedViewController */;
-			targetProxy = C1C24B8E855CB6CFD35B3F51D2B6EC9D /* PBXContainerItemProxy */;
+			targetProxy = D875D722EC5AEF70CAAB9D4B8CA1F30E /* PBXContainerItemProxy */;
 		};
-		75A4A28FB67AE89E41A5AB8EC446DB17 /* PBXTargetDependency */ = {
+		BECEF4426E01DE28195857988A419157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = CD019CC68F0AD5B6B71D46F7DFAD67C9 /* Alamofire */;
-			targetProxy = DF26022178D4398B245C0FC58AAF4DA7 /* PBXContainerItemProxy */;
+			name = FontAwesomeKit;
+			target = B85BAA936E50665449890C28F3ADB5E3 /* FontAwesomeKit */;
+			targetProxy = 85DACA386BC9FF4057D62E21239E86D3 /* PBXContainerItemProxy */;
 		};
-		912FB02F1514549E649E17D9476C8F36 /* PBXTargetDependency */ = {
+		FAED8B4E2462BC4DA1D295108E3C5CF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = A064B75A9838606659BB57FE5AC8A101 /* SVProgressHUD */;
-			targetProxy = 6705B58894A1B0ED504A3995D1735F88 /* PBXContainerItemProxy */;
-		};
-		9F92C3095CDCABA06995A91CF4F4B6D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FontAwesomeKit;
-			target = 3B20682110B88BB32BA1340E287FAAED /* FontAwesomeKit */;
-			targetProxy = AA80D083FA1674F6806A17DDC09E9C05 /* PBXContainerItemProxy */;
+			targetProxy = 1B1E57F5D64459F01C9A70EAC03E7915 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		028BF7B09998FABF9131D9363475133C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4C252BE98079DDF03AE5DCCF52CD059 /* FontAwesomeKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.2.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesomeKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesomeKit/FontAwesomeKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FontAwesomeKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		08E91317ED34C18F323592C810F429DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C9D5F109536849420D3948DB3F2DF1F /* Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.2;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1370D253A5F49FE94541D1E507D69CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6D7C96AB8C2B462888DA90F536F24BE /* SVProgressHUD-Private.xcconfig */;
@@ -934,6 +883,33 @@
 			};
 			name = Debug;
 		};
+		2A0CD1FBD3AFFB39E8588A90A58D292A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF9C21F2E01701E1610FD41DE46D476 /* Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2C09AA4110E2FBD9BCF9EE2C5DFD40B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 342B5FC41B52F5A57D735782725F8380 /* TGLStackedViewController-Private.xcconfig */;
@@ -953,6 +929,33 @@
 				MODULEMAP_FILE = "Target Support Files/TGLStackedViewController/TGLStackedViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TGLStackedViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E89E683565B71DC9C0BCFE6E772AB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE10029A45033B2CB2D5CEAEE1608E6 /* FontAwesomeKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesomeKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesomeKit/FontAwesomeKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FontAwesomeKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -985,6 +988,33 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B4203E9D38BF913C3A28FC34AFBC34A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE10029A45033B2CB2D5CEAEE1608E6 /* FontAwesomeKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesomeKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesomeKit/FontAwesomeKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontAwesomeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1113,36 +1143,9 @@
 			};
 			name = Release;
 		};
-		AF30160A1A2E702B081F6A66A8A95A64 /* Release */ = {
+		CE6BFFDCFB154D45C3240B3A3341A9D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4C252BE98079DDF03AE5DCCF52CD059 /* FontAwesomeKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.2.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesomeKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesomeKit/FontAwesomeKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FontAwesomeKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DB336E60F389FD188E8960FFAF6BF0A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C9D5F109536849420D3948DB3F2DF1F /* Alamofire-Private.xcconfig */;
+			baseConfigurationReference = 4BF9C21F2E01701E1610FD41DE46D476 /* Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.0.2;
@@ -1157,15 +1160,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1213,11 +1217,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		519A30641CA489C44B9DAFF99E150425 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4203E9D38BF913C3A28FC34AFBC34A /* Debug */,
+				4E89E683565B71DC9C0BCFE6E772AB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		56D91FE0B2C02AF0BCA9A949317E020A /* Build configuration list for PBXNativeTarget "TGLStackedViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7C4BF7AA496C9A4921CDEA175E1D5AC /* Debug */,
 				2C09AA4110E2FBD9BCF9EE2C5DFD40B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62BCC522A784669FC21C0598DD5795B3 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6BFFDCFB154D45C3240B3A3341A9D0 /* Debug */,
+				2A0CD1FBD3AFFB39E8588A90A58D292A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1231,29 +1253,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84BEC7E19FFF533677E2EA87F00B49E5 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				028BF7B09998FABF9131D9363475133C /* Debug */,
-				AF30160A1A2E702B081F6A66A8A95A64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D4F7D2F92F1A05935C16C7B7A80469E1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1370D253A5F49FE94541D1E507D69CE8 /* Debug */,
 				AB25E3D9E05D9CA8F4CB30B99C79F202 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D647256E3FBE156EEAFCD255A733D304 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				08E91317ED34C18F323592C810F429DD /* Debug */,
-				DB336E60F389FD188E8960FFAF6BF0A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

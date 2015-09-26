@@ -9,8 +9,8 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <FontAwesomeKit/FontAwesomeKit.h>
 #import <TGLStackedViewController/TGLStackedViewController.h>
-
-#import "CardIO.h"
+#import <PayPal-iOS-SDK/PayPalMobile.h>
+#import <PayPal-iOS-SDK/CardIO.h>
 
 @import AudioToolbox;
 @import AVFoundation;
