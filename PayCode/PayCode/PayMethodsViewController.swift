@@ -68,7 +68,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     }
     
     func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, willAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!, completionBlock: PayPalFuturePaymentDelegateCompletionBlock!) {
-        
+        completionBlock()
     }
     
     // MARK: - Callbacks -
@@ -138,8 +138,8 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         
         
         self.collectionView?.backgroundColor = UIColor.clearColor()
-        
-        self.collectionView?.registerClass(PaymentCell.self, forCellWithReuseIdentifier: "paymentCell")
+
+        self.collectionView?.registerNib(UINib(nibName: "PaymentCell", bundle: nil), forCellWithReuseIdentifier: "paymentCell")
     }
     
     func configureStackView() {

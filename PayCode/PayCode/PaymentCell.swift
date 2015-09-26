@@ -10,20 +10,9 @@ import UIKit
 
 class PaymentCell: UICollectionViewCell {
 
-    weak var paymentView : UIView!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.paymentView = NSBundle.mainBundle().loadNibNamed("PaymentCell", owner: nil, options: nil).last as! UIView
-        paymentView.frame = self.bounds
-        self.contentView.addSubview(paymentView)
-        self.clipsToBounds = true
-        self.layer.cornerRadius = 10
-        self.layer.masksToBounds = true
-    }
     
     func refresh() {
-        self.paymentView.backgroundColor = self.getRandomColor()
+//        self.paymentView.backgroundColor = self.getRandomColor()
     }
     
     func getRandomColor() -> UIColor{
@@ -35,10 +24,6 @@ class PaymentCell: UICollectionViewCell {
         let randomBlue:CGFloat = CGFloat(drand48())
         
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("No support!")
     }
     
     class func cell() -> PaymentCell
