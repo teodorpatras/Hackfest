@@ -10,6 +10,7 @@ import UIKit
 
 class PaymentCell: UICollectionViewCell {
 
+    @IBOutlet weak var chipView: UIView!
     
     @IBOutlet weak var validLabel: UILabel!
     @IBOutlet weak var identificationLabel: UILabel!
@@ -29,6 +30,8 @@ class PaymentCell: UICollectionViewCell {
     func configureWithModel(model:Payment) {
         self.bgView.layer.cornerRadius = 5.0
         self.bgView.layer.masksToBounds = true
+        self.chipView.layer.cornerRadius = 5.0
+        self.chipView.layer.masksToBounds = true
         
         self.bgView.image = model.paymentType.backgroundImage()
         self.logoView.image = model.paymentType.logoImage()
@@ -36,6 +39,8 @@ class PaymentCell: UICollectionViewCell {
         self.nameLabel.text = model.name
         self.validLabel.text = model.validUntill
         self.identificationLabel.text = model.identifier
+        
+        self.chipView.hidden = model.paymentType == .Paypal
     }
     
     func getRandomColor() -> UIColor{

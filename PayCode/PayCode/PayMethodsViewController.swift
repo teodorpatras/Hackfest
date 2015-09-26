@@ -62,6 +62,12 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         payment1.identifier = "4111 2335 6558 5444"
         payment1.validUntill = "11/18"
         
+        let payment2 = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+        payment2.name = "Bartosz Hernas"
+        payment2.type = "paypal"
+        payment2.identifier = "bartosz@hernas.pl"
+        payment2.validUntill = "11/18"
+        
     }
     
     // MARK: - CardIO -
