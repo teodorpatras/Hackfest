@@ -230,9 +230,9 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         //
         self.unexposedItemsAreSelectable = true;
         
-        let size = CGSizeMake(0.0, 250.0)
+        let size = CGSizeMake(0.0, 300.0)
         
-//        self.stackedLayout.topReveal = 200.0
+        self.stackedLayout.topReveal = 200.0
         self.exposedItemSize = size
         self.stackedLayout.itemSize = size
         self.exposedPinningMode = .All;
