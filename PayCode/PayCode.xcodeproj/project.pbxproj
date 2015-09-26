@@ -271,6 +271,12 @@
 				TargetAttributes = {
 					1337B10A1BB6C7CD00A567C0 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = LL65K2JW2V;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					1337B1211BB6C7CD00A567C0 = {
 						CreatedOnToolsVersion = 7.1;
@@ -530,12 +536,15 @@
 			baseConfigurationReference = 9D6D39510C2051F3CC3033E1 /* Pods-PayCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PayCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.PayCode;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hernas.PayCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PayCode/PayCode-BridgingHeader.h";
 			};
 			name = Debug;
@@ -545,12 +554,15 @@
 			baseConfigurationReference = 5F1D8845B39F90D4EFDAC805 /* Pods-PayCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PayCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.PayCode;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hernas.PayCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PayCode/PayCode-BridgingHeader.h";
 			};
 			name = Release;

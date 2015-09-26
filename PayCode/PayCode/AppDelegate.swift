@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         application.statusBarStyle = .LightContent
         self.window?.tintColor = UIColor.whiteColor()
@@ -24,6 +23,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentSandbox : "Ad9b3QwxCP9idzxYhW89N05K7MAwgvzW9PZQn2tgTUYAzdDSNlyH40WZnyJskUS8_mUjY2xDTB9FxeqZ"])
         
+        let _: OneSignal = OneSignal(launchOptions: launchOptions, appId: "d6e447ca-6478-11e5-a602-7bb0f5caee4b") {
+            (message, additionalData, isActive) in
+            if (additionalData != nil) {
+                NSLog("APP LOG ADDITIONALDATA: %@", additionalData);
+                // Append AdditionalData at the end of the message
+                let displayMessage: NSString = NSString(format:"NotificationMessage:%@", message);
+                
+                var messageTitle: NSString = "";
+                if (additionalData["discount"] != nil) {
+                    messageTitle = additionalData["discount"] as! String
+                }
+                else if (additionalData["bonusCredits"] != nil) {
+                    messageTitle = additionalData["bonusCredits"] as! String;
+                }
+                else if (additionalData["actionSelected"] != nil) {
+                    messageTitle = NSString(format:"Pressed ButtonId:%@", additionalData["actionSelected"] as! String);
+                }
+                
+                let alertView: UIAlertView = UIAlertView(title: messageTitle as String,
+                    message:displayMessage as String,
+                    delegate:self,
+                    cancelButtonTitle:"Close");
+                
+                // Highly recommend adding app logic around this so the user is not interrupted.
+                alertView.show();
+            }
+                // If a push notification is received when the app is being used it does not go to the notifiction center so display in your app.
+            else if (isActive) {
+                let alertView: UIAlertView = UIAlertView(title:"OneSignal Message",
+                    message:message,
+                    delegate:self,
+                    cancelButtonTitle:"Close");
+                alertView.show();
+            }
+        }
         return true
     }
 

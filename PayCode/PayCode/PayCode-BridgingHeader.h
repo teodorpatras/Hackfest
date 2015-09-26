@@ -11,6 +11,7 @@
 #import <TGLStackedViewController/TGLStackedViewController.h>
 #import <PayPal-iOS-SDK/PayPalMobile.h>
 #import <PayPal-iOS-SDK/CardIO.h>
+#import <OneSignal/OneSignal.h>
 
 @import AudioToolbox;
 @import AVFoundation;

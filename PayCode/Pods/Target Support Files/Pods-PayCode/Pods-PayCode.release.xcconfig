@@ -1,9 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/OneSignal/iOS_SDK/Framework"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PayPal-iOS-SDK"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OneSignal" "${PODS_ROOT}/Headers/Public/OneSignal/OneSignal" "${PODS_ROOT}/Headers/Public/PayPal-iOS-SDK"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/PayPal-iOS-SDK/PayPalMobile" "$(PODS_ROOT)/PayPal-iOS-SDK/PayPalMobile"
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FontAwesomeKit.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SVProgressHUD.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/TGLStackedViewController.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PayPal-iOS-SDK"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"PayPalMobile" -l"c++" -framework "AVFoundation" -framework "Accelerate" -framework "Alamofire" -framework "AudioToolbox" -framework "CoreLocation" -framework "CoreMedia" -framework "FontAwesomeKit" -framework "MessageUI" -framework "MobileCoreServices" -framework "SVProgressHUD" -framework "SystemConfiguration" -framework "TGLStackedViewController"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FontAwesomeKit.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SVProgressHUD.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/TGLStackedViewController.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OneSignal" -isystem "${PODS_ROOT}/Headers/Public/OneSignal/OneSignal" -isystem "${PODS_ROOT}/Headers/Public/PayPal-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"PayPalMobile" -l"c++" -framework "AVFoundation" -framework "Accelerate" -framework "Alamofire" -framework "AudioToolbox" -framework "CoreLocation" -framework "CoreMedia" -framework "FontAwesomeKit" -framework "MessageUI" -framework "MobileCoreServices" -framework "OneSignal" -framework "SVProgressHUD" -framework "SystemConfiguration" -framework "TGLStackedViewController"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-PayCode
 PODS_ROOT = ${SRCROOT}/Pods
