@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="495" height="274"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarbonCard4_860" translatesAutoresizingMaskIntoConstraints="NO" id="nrH-v1-Ywb">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit-card-design-commerzbank-intraligi-15" translatesAutoresizingMaskIntoConstraints="NO" id="nrH-v1-Ywb">
                         <rect key="frame" x="0.0" y="0.0" width="495" height="274"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Visa_Inc._logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="5om-Ay-ddd">
@@ -26,7 +26,7 @@
                             <constraint firstAttribute="height" constant="62" id="K8W-En-dDo"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-ZL-lXB">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-ZL-lXB">
                         <rect key="frame" x="342" y="207.5" width="27" height="30.5"/>
                         <string key="text">valid
 thru</string>
@@ -34,7 +34,7 @@ thru</string>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="month/year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85T-mz-ymO">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="month/year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85T-mz-ymO">
                         <rect key="frame" x="368" y="195" width="69.5" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,17 +60,21 @@ thru</string>
                             <constraint firstItem="gdX-kB-dmE" firstAttribute="top" secondItem="bvJ-FP-oen" secondAttribute="top" constant="14" id="ndB-To-XMA"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-9b-cum">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-9b-cum">
                         <rect key="frame" x="380" y="212.5" width="45" height="20.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="1" height="1"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bartosz Hernas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-ZN-Fua">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bartosz Hernas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-ZN-Fua">
                         <rect key="frame" x="37" y="207" width="160.5" height="25.5"/>
                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="1" height="1"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQT-4W-f4j">
                         <rect key="frame" x="70" y="149" width="310.5" height="26.5"/>
@@ -111,11 +115,18 @@ thru</string>
                 <constraint firstItem="SiW-9b-cum" firstAttribute="centerX" secondItem="85T-mz-ymO" secondAttribute="centerX" id="zgh-vS-PaL"/>
             </constraints>
             <size key="customSize" width="495" height="274"/>
+            <connections>
+                <outlet property="bgView" destination="nrH-v1-Ywb" id="SxN-M6-WvW"/>
+                <outlet property="identificationLabel" destination="aQT-4W-f4j" id="Adu-5l-W93"/>
+                <outlet property="logoView" destination="5om-Ay-ddd" id="EHB-rt-VRo"/>
+                <outlet property="nameLabel" destination="2yP-ZN-Fua" id="OTt-mf-PNa"/>
+                <outlet property="validLabel" destination="SiW-9b-cum" id="ofD-kS-wz9"/>
+            </connections>
             <point key="canvasLocation" x="127.5" y="109"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="CarbonCard4_860" width="860" height="546"/>
         <image name="Visa_Inc._logo.svg" width="2000" height="760"/>
+        <image name="credit-card-design-commerzbank-intraligi-15" width="800" height="480"/>
     </resources>
 </document>

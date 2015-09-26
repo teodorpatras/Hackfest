@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.tintColor = UIColor.blackColor()
         appearance.translucent = false
         
+        
         PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentSandbox : "Ad9b3QwxCP9idzxYhW89N05K7MAwgvzW9PZQn2tgTUYAzdDSNlyH40WZnyJskUS8_mUjY2xDTB9FxeqZ"])
         
         return true

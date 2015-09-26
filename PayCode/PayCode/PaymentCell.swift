@@ -11,8 +11,31 @@ import UIKit
 class PaymentCell: UICollectionViewCell {
 
     
+    @IBOutlet weak var validLabel: UILabel!
+    @IBOutlet weak var identificationLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var logoView: UIImageView!
+    @IBOutlet weak var bgView: UIImageView!
     func refresh() {
 //        self.paymentView.backgroundColor = self.getRandomColor()
+    }
+    
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        self.bgView.layer.cornerRadius = 5.0
+//        self.bgView.layer.masksToBounds = true
+//    }
+    
+    func configureWithModel(model:Payment) {
+        self.bgView.layer.cornerRadius = 5.0
+        self.bgView.layer.masksToBounds = true
+        
+        self.bgView.image = model.paymentType.backgroundImage()
+        self.logoView.image = model.paymentType.logoImage()
+        
+        self.nameLabel.text = model.name
+        self.validLabel.text = model.validUntill
+        self.identificationLabel.text = model.identifier
     }
     
     func getRandomColor() -> UIColor{
@@ -24,11 +47,5 @@ class PaymentCell: UICollectionViewCell {
         let randomBlue:CGFloat = CGFloat(drand48())
         
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-    }
-    
-    class func cell() -> PaymentCell
-    {
-        let cell = NSBundle.mainBundle().loadNibNamed("PaymentCell", owner: nil, options: nil).last as! PaymentCell
-        return cell
     }
 }
