@@ -6,13 +6,27 @@
 //  Copyright © 2015 Teodor Patras. All rights reserved.
 //
 
+import CoreData
 import UIKit
 import TGLStackedViewController
 import FontAwesomeKit
 
-class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewControllerDelegate,PayPalFuturePaymentDelegate {
+class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewControllerDelegate,PayPalFuturePaymentDelegate, NSFetchedResultsControllerDelegate {
     
     weak var addButton : UIButton!
+    
+    lazy var fetchedResultController:NSFetchedResultsController = {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let sortDescriptor  = NSSortDescriptor(key: "identifier", ascending: true)
+        let fetchRequest = NSFetchRequest(entityName: "Payment")
+        fetchRequest.fetchBatchSize = 20
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        let fetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: appDelegate.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultController.delegate = self
+        return fetchedResultController
+    }()
     
     override var exposedItemIndexPath : NSIndexPath?{
         didSet{
@@ -30,6 +44,30 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         configureUI()
         CardIOUtilities.preload()
         PayPalMobile.preconnectWithEnvironment(PayPalEnvironmentSandbox)
+        
+        try! self.fetchedResultController.performFetch()
+        
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let payment = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+        payment.name = "Michal Hernas"
+        payment.type = "visa"
+        payment.identifier = "4111 1111 1111 1111"
+        payment.validUntill = "02/19"
+        
+        
+        let payment1 = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+        payment1.name = "Bartosz Hernas"
+        payment1.type = "mastercard"
+        payment1.identifier = "4111 2335 6558 5444"
+        payment1.validUntill = "11/18"
+        
+        let payment2 = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+        payment2.name = "Bartosz Hernas"
+        payment2.type = "paypal"
+        payment2.identifier = "bartosz@hernas.pl"
+        payment2.validUntill = "11/18"
+        
     }
     
     // MARK: - CardIO -
@@ -49,12 +87,13 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("paymentCell", forIndexPath: indexPath) as! PaymentCell
-        cell.refresh()
+        cell.configureWithModel(self.fetchedResultController.objectAtIndexPath(indexPath) as! Payment)
         return cell
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        let section:NSFetchedResultsSectionInfo = self.fetchedResultController.sections![section]
+        return section.numberOfObjects
     }
     
     // MARK: - PayPalFuturePayment -
@@ -65,10 +104,12 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     
     func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, didAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!) {
         print("-----------------\n\n\(futurePaymentAuthorization)\n\n--------------------")
-        print(PayPalMobile.clientMetadataID())
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
+    func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, willAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!, completionBlock: PayPalFuturePaymentDelegateCompletionBlock!) {
+        completionBlock()
+    }
+    
     // MARK: - Callbacks -
     
     func addPayment() {
@@ -136,8 +177,8 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         
         
         self.collectionView?.backgroundColor = UIColor.clearColor()
-        
-        self.collectionView?.registerClass(PaymentCell.self, forCellWithReuseIdentifier: "paymentCell")
+
+        self.collectionView?.registerNib(UINib(nibName: "PaymentCell", bundle: nil), forCellWithReuseIdentifier: "paymentCell")
     }
     
     func configureStackView() {
@@ -174,5 +215,117 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         self.exposedBottomPinningCount = 5
         
         self.collectionView?.contentInset = UIEdgeInsetsMake(100, 0, 0, 0)
+    }
+    
+    
+    // I just implemented that with Swift. So I would like to share my implementation.
+    // First initialise an array of NSBlockOperations:
+    var blockOperations: [NSBlockOperation] = []
+    
+    
+    // In the did change object method:
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        
+        if type == NSFetchedResultsChangeType.Insert {
+            print("Insert Object: \(newIndexPath)")
+            
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.insertItemsAtIndexPaths([newIndexPath!])
+                    }
+                    })
+            )
+        }
+        else if type == NSFetchedResultsChangeType.Update {
+            print("Update Object: \(indexPath)")
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.reloadItemsAtIndexPaths([indexPath!])
+                    }
+                    })
+            )
+        }
+        else if type == NSFetchedResultsChangeType.Move {
+            print("Move Object: \(indexPath)")
+            
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.moveItemAtIndexPath(indexPath!, toIndexPath: newIndexPath!)
+                    }
+                    })
+            )
+        }
+        else if type == NSFetchedResultsChangeType.Delete {
+            print("Delete Object: \(indexPath)")
+            
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.deleteItemsAtIndexPaths([indexPath!])
+                    }
+                    })
+            )
+        }
+    }
+    
+    // In the did change section method:
+    func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
+        
+        if type == NSFetchedResultsChangeType.Insert {
+            print("Insert Section: \(sectionIndex)")
+            
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.insertSections(NSIndexSet(index: sectionIndex))
+                    }
+                    })
+            )
+        }
+        else if type == NSFetchedResultsChangeType.Update {
+            print("Update Section: \(sectionIndex)")
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.reloadSections(NSIndexSet(index: sectionIndex))
+                    }
+                    })
+            )
+        }
+        else if type == NSFetchedResultsChangeType.Delete {
+            print("Delete Section: \(sectionIndex)")
+            
+            blockOperations.append(
+                NSBlockOperation(block: { [weak self] in
+                    if let this = self {
+                        this.collectionView!.deleteSections(NSIndexSet(index: sectionIndex))
+                    }
+                    })
+            )
+        }
+    }
+    
+    // And finally, in the did controller did change content method:
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        collectionView!.performBatchUpdates({ () -> Void in
+            for operation: NSBlockOperation in self.blockOperations {
+                operation.start()
+            }
+            }, completion: { (finished) -> Void in
+                self.blockOperations.removeAll(keepCapacity: false)
+        })
+    }
+    
+    // I personally added some code in the deinit method as well, in order to cancel the operations when the ViewController is about to get deallocated:
+    deinit {
+        // Cancel all block operations when VC deallocates
+        for operation: NSBlockOperation in blockOperations {
+            operation.cancel()
+        }
+        
+        blockOperations.removeAll(keepCapacity: false)
     }
 }

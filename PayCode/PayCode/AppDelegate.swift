@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.tintColor = UIColor.blackColor()
         appearance.translucent = false
         
+        
         PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentSandbox : "Ad9b3QwxCP9idzxYhW89N05K7MAwgvzW9PZQn2tgTUYAzdDSNlyH40WZnyJskUS8_mUjY2xDTB9FxeqZ"])
         
         let _: OneSignal = OneSignal(launchOptions: launchOptions, appId: "d6e447ca-6478-11e5-a602-7bb0f5caee4b") {
