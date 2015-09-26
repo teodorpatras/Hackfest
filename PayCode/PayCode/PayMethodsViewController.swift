@@ -65,12 +65,10 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     
     func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, didAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!) {
         print("-----------------\n\n\(futurePaymentAuthorization)\n\n--------------------")
+        print(PayPalMobile.clientMetadataID())
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, willAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!, completionBlock: PayPalFuturePaymentDelegateCompletionBlock!) {
-        
-    }
-    
+
     // MARK: - Callbacks -
     
     func addPayment() {
