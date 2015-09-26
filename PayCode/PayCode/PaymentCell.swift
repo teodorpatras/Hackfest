@@ -12,6 +12,7 @@ class PaymentCell: UICollectionViewCell {
 
     @IBOutlet weak var chipView: UIView!
     
+    @IBOutlet weak var dateView: UIView!
     @IBOutlet weak var validLabel: UILabel!
     @IBOutlet weak var identificationLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -44,7 +45,13 @@ class PaymentCell: UICollectionViewCell {
         self.logoView.image = model.paymentType.logoImage()
         
         self.nameLabel.text = model.name
-        self.validLabel.text = model.validUntill
+        
+        if let validity = model.validUntill {
+            self.validLabel.text = validity
+            self.dateView.alpha = 1
+        } else {
+            self.dateView.alpha = 0
+        }
         self.identificationLabel.text = model.identifier
         
         self.chipView.hidden = model.paymentType == .Paypal

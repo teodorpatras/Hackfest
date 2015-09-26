@@ -8,6 +8,7 @@
 
 import CoreData
 import UIKit
+import SVProgressHUD
 import TGLStackedViewController
 import FontAwesomeKit
 import Alamofire
@@ -47,28 +48,6 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         PayPalMobile.preconnectWithEnvironment(PayPalEnvironmentSandbox)
         
         try! self.fetchedResultController.performFetch()
-        
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let payment = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
-        payment.name = "Michal Hernas"
-        payment.type = "visa"
-        payment.identifier = "4111 1111 1111 1111"
-        payment.validUntill = "02/19"
-        
-        
-        let payment1 = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
-        payment1.name = "Bartosz Hernas"
-        payment1.type = "mastercard"
-        payment1.identifier = "4111 2335 6558 5444"
-        payment1.validUntill = "11/18"
-        
-        let payment2 = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
-        payment2.name = "Bartosz Hernas"
-        payment2.type = "paypal"
-        payment2.identifier = "bartosz@hernas.pl"
-        payment2.validUntill = "11/18"
-        
         self.collectionView?.reloadData()
     }
     
@@ -81,6 +60,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     func userDidProvideCreditCardInfo(cardInfo: CardIOCreditCardInfo!, inPaymentViewController paymentViewController: CardIOPaymentViewController!) {
         if let info = cardInfo {
             
+            // 5173 3709 8453 3122
             let dict = ["number" : info.cardNumber, "expiration" : "\(info.expiryMonth)/\(info.expiryYear)", "cvv" : info.cvv]
             
             
@@ -89,8 +69,20 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             try! request.HTTPBody = NSJSONSerialization.dataWithJSONObject(dict, options: [])
             
+            SVProgressHUD.show()
             Alamofire.request(request).responseJSON { (request, response, result) -> Void in
-                print(result.value)
+                SVProgressHUD.dismiss()
+                if let dict = result.value as? [String : AnyObject] {
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    let payment = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+                    payment.name = "Teodor Patras"
+                    payment.id = dict["id"] as! Int
+                    payment.type = (dict["card_type"] as! String).lowercaseString
+                    payment.identifier = info.redactedCardNumber
+                    let str = "\(info.expiryYear)"
+                    let year = str.substringFromIndex(2)
+                    payment.validUntill = "\(info.expiryMonth)/\(year)"
+                }
             }
         }
         
@@ -127,8 +119,17 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         try! request.HTTPBody = NSJSONSerialization.dataWithJSONObject(dict, options: [])
         
+        SVProgressHUD.show()
         Alamofire.request(request).responseJSON { (request, response, result) -> Void in
-            print("\(result)")
+            SVProgressHUD.dismiss()
+            if let dict = (result.value as? [String : AnyObject])?["data"] as? [String : AnyObject] {
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let payment = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+                payment.name = dict["name"] as! String
+                payment.id = (result.value as? [String : AnyObject])?["id"] as! Int
+                payment.type = "paypal"
+                payment.identifier = dict["email"] as! String
+            }   
         }
         
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -339,7 +340,9 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
 //    
     // And finally, in the did controller did change content method:
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        
         collectionView!.reloadData()
+        collectionView?.collectionViewLayout.invalidateLayout()
     }
 //
 //    // I personally added some code in the deinit method as well, in order to cancel the operations when the ViewController is about to get deallocated:
@@ -351,4 +354,59 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
 //        
 //        blockOperations.removeAll(keepCapacity: false)
 //    }
+}
+
+extension String
+{
+    func substringFromIndex(index: Int) -> String
+    {
+        if (index < 0 || index > self.characters.count)
+        {
+            print("index \(index) out of bounds")
+            return ""
+        }
+        return self.substringFromIndex(self.startIndex.advancedBy(index))
+    }
+    
+    func substringToIndex(index: Int) -> String
+    {
+        if (index < 0 || index > self.characters.count)
+        {
+            print("index \(index) out of bounds")
+            return ""
+        }
+        return self.substringToIndex(self.startIndex.advancedBy(index))
+    }
+    
+    func substringWithRange(start: Int, end: Int) -> String
+    {
+        if (start < 0 || start > self.characters.count)
+        {
+            print("start index \(start) out of bounds")
+            return ""
+        }
+        else if end < 0 || end > self.characters.count
+        {
+            print("end index \(end) out of bounds")
+            return ""
+        }
+        let range = Range(start: self.startIndex.advancedBy(start), end: self.startIndex.advancedBy(end))
+        return self.substringWithRange(range)
+    }
+    
+    func substringWithRange(start: Int, location: Int) -> String
+    {
+        if (start < 0 || start > self.characters.count)
+        {
+            print("start index \(start) out of bounds")
+            return ""
+        }
+        else if location < 0 || start + location > self.characters.count
+        {
+            print("end index \(start + location) out of bounds")
+            return ""
+        }
+        let range = Range(start: self.startIndex.advancedBy(start), end: self.startIndex.advancedBy(start + location))
+        return self.substringWithRange(range)
+    }
 }

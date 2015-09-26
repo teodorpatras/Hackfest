@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1337B10F1BB6C7CD00A567C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B10E1BB6C7CD00A567C0 /* AppDelegate.swift */; };
-		1337B1111BB6C7CD00A567C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B1101BB6C7CD00A567C0 /* ViewController.swift */; };
 		1337B1141BB6C7CD00A567C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337B1121BB6C7CD00A567C0 /* Main.storyboard */; };
 		1337B1171BB6C7CD00A567C0 /* PayCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1337B1151BB6C7CD00A567C0 /* PayCode.xcdatamodeld */; };
 		1337B1191BB6C7CD00A567C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337B1181BB6C7CD00A567C0 /* Assets.xcassets */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		1337B10B1BB6C7CD00A567C0 /* PayCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1337B10E1BB6C7CD00A567C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1337B1101BB6C7CD00A567C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1337B1131BB6C7CD00A567C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1337B1161BB6C7CD00A567C0 /* PayCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayCode.xcdatamodel; sourceTree = "<group>"; };
 		1337B1181BB6C7CD00A567C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				1337B1401BB6D13D00A567C0 /* PayMethodsViewController.swift */,
-				1337B1101BB6C7CD00A567C0 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -400,7 +397,6 @@
 				1337B1461BB6D2A900A567C0 /* PaymentCell.swift in Sources */,
 				1337B1171BB6C7CD00A567C0 /* PayCode.xcdatamodeld in Sources */,
 				304CE2D61BB7209200B6A1B6 /* Payment+CoreDataProperties.swift in Sources */,
-				1337B1111BB6C7CD00A567C0 /* ViewController.swift in Sources */,
 				1337B14D1BB6E08200A567C0 /* AppTheme.swift in Sources */,
 				1337B1411BB6D13D00A567C0 /* PayMethodsViewController.swift in Sources */,
 				304CE2D71BB7209200B6A1B6 /* Payment.swift in Sources */,

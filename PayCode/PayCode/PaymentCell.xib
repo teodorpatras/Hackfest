@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9052" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -15,10 +15,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="495" height="274"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit-card-design-commerzbank-intraligi-15" translatesAutoresizingMaskIntoConstraints="NO" id="nrH-v1-Ywb">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nrH-v1-Ywb">
                         <rect key="frame" x="0.0" y="0.0" width="495" height="274"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Visa_Inc._logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="5om-Ay-ddd">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5om-Ay-ddd">
                         <rect key="frame" x="352" y="27" width="116" height="62"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -26,20 +26,6 @@
                             <constraint firstAttribute="height" constant="62" id="K8W-En-dDo"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-ZL-lXB">
-                        <rect key="frame" x="341" y="207" width="27" height="30.5"/>
-                        <string key="text">valid
-thru</string>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="month/year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85T-mz-ymO">
-                        <rect key="frame" x="367.5" y="194" width="69.5" height="16"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvJ-FP-oen">
                         <rect key="frame" x="26" y="52" width="75" height="52"/>
                         <subviews>
@@ -60,14 +46,38 @@ thru</string>
                             <constraint firstItem="gdX-kB-dmE" firstAttribute="top" secondItem="bvJ-FP-oen" secondAttribute="top" constant="14" id="ndB-To-XMA"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-9b-cum">
-                        <rect key="frame" x="379" y="211.5" width="46" height="21.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <size key="shadowOffset" width="1" height="1"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hst-JJ-P6W">
+                        <rect key="frame" x="341" y="191.5" width="116" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-9b-cum">
+                                <rect key="frame" x="38" y="20" width="70" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="month/year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85T-mz-ymO">
+                                <rect key="frame" x="26.5" y="2.5" width="69.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-ZL-lXB">
+                                <rect key="frame" x="0.0" y="15.5" width="27" height="30.5"/>
+                                <string key="text">valid
+thru</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="skb-YH-kiE"/>
+                            <constraint firstAttribute="width" constant="116" id="wkQ-qa-D5G"/>
+                        </constraints>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bartosz Hernas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-ZN-Fua">
                         <rect key="frame" x="37" y="206" width="161.5" height="26.5"/>
                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
@@ -111,20 +121,16 @@ thru</string>
                 <constraint firstItem="aQT-4W-f4j" firstAttribute="leading" secondItem="Clh-21-cD6" secondAttribute="leading" constant="70" id="JCT-LQ-hk7"/>
                 <constraint firstAttribute="bottom" secondItem="2yP-ZN-Fua" secondAttribute="bottom" constant="41.5" id="OeX-Bo-Csi"/>
                 <constraint firstItem="5om-Ay-ddd" firstAttribute="top" secondItem="Clh-21-cD6" secondAttribute="top" constant="27" id="PuR-eb-Z9d"/>
-                <constraint firstItem="SiW-9b-cum" firstAttribute="top" secondItem="85T-mz-ymO" secondAttribute="bottom" constant="2" id="QlR-rH-FEG"/>
-                <constraint firstAttribute="bottom" secondItem="SiW-9b-cum" secondAttribute="bottom" constant="41" id="Qlf-lV-Vzj"/>
-                <constraint firstItem="SiW-9b-cum" firstAttribute="centerY" secondItem="AcL-ZL-lXB" secondAttribute="centerY" id="Vr3-qG-k4U"/>
+                <constraint firstAttribute="trailing" secondItem="hst-JJ-P6W" secondAttribute="trailing" constant="38" id="TBn-ar-g9I"/>
                 <constraint firstItem="2yP-ZN-Fua" firstAttribute="leading" secondItem="Clh-21-cD6" secondAttribute="leading" constant="37" id="cS6-fN-Qws"/>
                 <constraint firstItem="aQT-4W-f4j" firstAttribute="centerY" secondItem="Clh-21-cD6" secondAttribute="centerY" constant="25" id="cWN-xc-Uwg"/>
                 <constraint firstItem="bvJ-FP-oen" firstAttribute="leading" secondItem="Clh-21-cD6" secondAttribute="leading" constant="26" id="jZr-N0-D4C"/>
-                <constraint firstAttribute="trailing" secondItem="SiW-9b-cum" secondAttribute="trailing" constant="70" id="np5-dJ-ISs"/>
-                <constraint firstItem="SiW-9b-cum" firstAttribute="leading" secondItem="AcL-ZL-lXB" secondAttribute="trailing" constant="11" id="oIK-Ep-BwP"/>
+                <constraint firstAttribute="bottom" secondItem="hst-JJ-P6W" secondAttribute="bottom" constant="16.5" id="n8k-tG-Qt6"/>
                 <constraint firstItem="bvJ-FP-oen" firstAttribute="top" secondItem="Clh-21-cD6" secondAttribute="top" constant="52" id="qxD-Cj-NGf"/>
                 <constraint firstItem="nrH-v1-Ywb" firstAttribute="top" secondItem="Clh-21-cD6" secondAttribute="top" id="spH-mi-2YV"/>
                 <constraint firstItem="2yP-ZN-Fua" firstAttribute="leading" secondItem="aQT-4W-f4j" secondAttribute="leading" id="viH-BM-GAH"/>
                 <constraint firstAttribute="bottom" secondItem="nrH-v1-Ywb" secondAttribute="bottom" id="w9s-HY-2IV"/>
                 <constraint firstAttribute="trailing" secondItem="nrH-v1-Ywb" secondAttribute="trailing" id="xgs-rh-Ez7"/>
-                <constraint firstItem="SiW-9b-cum" firstAttribute="centerX" secondItem="85T-mz-ymO" secondAttribute="centerX" id="zgh-vS-PaL"/>
             </constraints>
             <size key="customSize" width="495" height="274"/>
             <variation key="default">
@@ -135,6 +141,7 @@ thru</string>
             <connections>
                 <outlet property="bgView" destination="nrH-v1-Ywb" id="SxN-M6-WvW"/>
                 <outlet property="chipView" destination="bvJ-FP-oen" id="ntm-Kt-jUT"/>
+                <outlet property="dateView" destination="hst-JJ-P6W" id="Q0q-QC-4Pk"/>
                 <outlet property="identificationLabel" destination="aQT-4W-f4j" id="Adu-5l-W93"/>
                 <outlet property="logoView" destination="5om-Ay-ddd" id="EHB-rt-VRo"/>
                 <outlet property="nameLabel" destination="2yP-ZN-Fua" id="OTt-mf-PNa"/>
@@ -143,8 +150,4 @@ thru</string>
             <point key="canvasLocation" x="127.5" y="109"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="Visa_Inc._logo.svg" width="2000" height="760"/>
-        <image name="credit-card-design-commerzbank-intraligi-15" width="800" height="480"/>
-    </resources>
 </document>
