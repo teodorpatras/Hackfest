@@ -20,8 +20,8 @@
 		1337B1491BB6D32200A567C0 /* PaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1337B1481BB6D32200A567C0 /* PaymentCell.xib */; };
 		1337B14B1BB6DE8400A567C0 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1337B14A1BB6DE8400A567C0 /* FontAwesome.otf */; };
 		1337B14D1BB6E08200A567C0 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B14C1BB6E08200A567C0 /* AppTheme.swift */; };
-		304CE2D61BB7209200B6A1B6 /* Payment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CE2D41BB7209200B6A1B6 /* Payment+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		304CE2D71BB7209200B6A1B6 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CE2D51BB7209200B6A1B6 /* Payment.swift */; settings = {ASSET_TAGS = (); }; };
+		304CE2D61BB7209200B6A1B6 /* Payment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CE2D41BB7209200B6A1B6 /* Payment+CoreDataProperties.swift */; };
+		304CE2D71BB7209200B6A1B6 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CE2D51BB7209200B6A1B6 /* Payment.swift */; };
 		51CFFA4C2934BA7780E06ED6 /* Pods_PayCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391EE9899BCADF5F81DD2A1E /* Pods_PayCode.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 

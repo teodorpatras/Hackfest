@@ -10,6 +10,7 @@ import CoreData
 import UIKit
 import TGLStackedViewController
 import FontAwesomeKit
+import Alamofire
 
 class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewControllerDelegate,PayPalFuturePaymentDelegate, NSFetchedResultsControllerDelegate {
     
@@ -78,9 +79,21 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     
     func userDidProvideCreditCardInfo(cardInfo: CardIOCreditCardInfo!, inPaymentViewController paymentViewController: CardIOPaymentViewController!) {
         if let info = cardInfo {
-            let str = NSString(format: "Received card info.\n Number: %@\n expiry: %02lu/%lu\n cvv: %@.", info.cardNumber, info.expiryMonth, info.expiryYear, info.cvv)
-            print(str)
+            
+            let dict = ["number" : info.cardNumber, "expiration" : "\(info.expiryMonth)/\(info.expiryYear)", "cvv" : info.cvv]
+            
+            
+            let request = NSMutableURLRequest(URL: NSURL(string: "http://ohf.hern.as/payments/card/")!)
+            request.HTTPMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            try! request.HTTPBody = NSJSONSerialization.dataWithJSONObject(dict, options: [])
+            
+            Alamofire.request(request).responseJSON { (request, response, result) -> Void in
+                print(result.value)
+            }
         }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: - CollectionView -
@@ -103,7 +116,21 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     }
     
     func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, didAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!) {
-        print("-----------------\n\n\(futurePaymentAuthorization)\n\n--------------------")
+        
+        let clientCode = (futurePaymentAuthorization["response"] as! [String : AnyObject])["code"] as! String
+        let dict = ["authorization_code" : clientCode, "correlation_id" : PayPalMobile.clientMetadataID()]
+        
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://ohf.hern.as/payments/paypal/")!)
+        request.HTTPMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        try! request.HTTPBody = NSJSONSerialization.dataWithJSONObject(dict, options: [])
+        
+        Alamofire.request(request).responseJSON { (request, response, result) -> Void in
+            print("\(result)")
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, willAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!, completionBlock: PayPalFuturePaymentDelegateCompletionBlock!) {
