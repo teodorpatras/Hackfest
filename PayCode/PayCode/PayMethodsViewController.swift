@@ -46,6 +46,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         configureUI()
         CardIOUtilities.preload()
         PayPalMobile.preconnectWithEnvironment(PayPalEnvironmentSandbox)
+        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .Slide)
         
         try! self.fetchedResultController.performFetch()
         self.collectionView?.reloadData()
@@ -176,7 +177,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         controller.addAction(cardAction)
         controller.addAction(cancelAction)
         self.presentViewController(controller, animated: true, completion: nil)
-                controller.view.tintColor = UIColor(hue:0, saturation:0, brightness:0.44, alpha:1)
+                controller.view.tintColor = UIColor(hue:0.03, saturation:0.45, brightness:0.75, alpha:1)
     }
     
     // MARK: - Helpers -
@@ -230,7 +231,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         //
         self.unexposedItemsAreSelectable = true;
         
-        let size = CGSizeMake(0.0, 300.0)
+        let size = CGSizeMake(0, 260.0)
         
         self.stackedLayout.topReveal = 200.0
         self.exposedItemSize = size
