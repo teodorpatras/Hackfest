@@ -1,0 +1,17 @@
+platform :ios, "8.0"
+use_frameworks!
+
+target 'PayCode' do
+pod 'Alamofire'
+pod 'SVProgressHUD'
+pod 'CardIO'
+end
+
+target 'PayCodeTests' do
+
+end
+
+target 'PayCodeUITests' do
+
+end
+
