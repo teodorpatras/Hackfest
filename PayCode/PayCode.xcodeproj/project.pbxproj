@@ -15,6 +15,11 @@
 		1337B11C1BB6C7CD00A567C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337B11A1BB6C7CD00A567C0 /* LaunchScreen.storyboard */; };
 		1337B1271BB6C7CD00A567C0 /* PayCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B1261BB6C7CD00A567C0 /* PayCodeTests.swift */; };
 		1337B1321BB6C7CD00A567C0 /* PayCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B1311BB6C7CD00A567C0 /* PayCodeUITests.swift */; };
+		1337B1411BB6D13D00A567C0 /* PayMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B1401BB6D13D00A567C0 /* PayMethodsViewController.swift */; };
+		1337B1461BB6D2A900A567C0 /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B1451BB6D2A900A567C0 /* PaymentCell.swift */; };
+		1337B1491BB6D32200A567C0 /* PaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1337B1481BB6D32200A567C0 /* PaymentCell.xib */; };
+		1337B14B1BB6DE8400A567C0 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1337B14A1BB6DE8400A567C0 /* FontAwesome.otf */; };
+		1337B14D1BB6E08200A567C0 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337B14C1BB6E08200A567C0 /* AppTheme.swift */; };
 		51CFFA4C2934BA7780E06ED6 /* Pods_PayCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391EE9899BCADF5F81DD2A1E /* Pods_PayCode.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -51,6 +56,11 @@
 		1337B1311BB6C7CD00A567C0 /* PayCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCodeUITests.swift; sourceTree = "<group>"; };
 		1337B1331BB6C7CD00A567C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1337B13F1BB6C9A100A567C0 /* PayCode-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayCode-BridgingHeader.h"; sourceTree = "<group>"; };
+		1337B1401BB6D13D00A567C0 /* PayMethodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayMethodsViewController.swift; sourceTree = "<group>"; };
+		1337B1451BB6D2A900A567C0 /* PaymentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		1337B1481BB6D32200A567C0 /* PaymentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentCell.xib; sourceTree = "<group>"; };
+		1337B14A1BB6DE8400A567C0 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		1337B14C1BB6E08200A567C0 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		391EE9899BCADF5F81DD2A1E /* Pods_PayCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1D8845B39F90D4EFDAC805 /* Pods-PayCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayCode/Pods-PayCode.release.xcconfig"; sourceTree = "<group>"; };
 		9D6D39510C2051F3CC3033E1 /* Pods-PayCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayCode/Pods-PayCode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,14 +125,11 @@
 		1337B10D1BB6C7CD00A567C0 /* PayCode */ = {
 			isa = PBXGroup;
 			children = (
-				1337B10E1BB6C7CD00A567C0 /* AppDelegate.swift */,
-				1337B1101BB6C7CD00A567C0 /* ViewController.swift */,
-				1337B1121BB6C7CD00A567C0 /* Main.storyboard */,
-				1337B1181BB6C7CD00A567C0 /* Assets.xcassets */,
-				1337B11A1BB6C7CD00A567C0 /* LaunchScreen.storyboard */,
+				1337B14A1BB6DE8400A567C0 /* FontAwesome.otf */,
+				1337B1441BB6D21100A567C0 /* Model */,
+				1337B1431BB6D20B00A567C0 /* View */,
+				1337B1421BB6D1FD00A567C0 /* Controller */,
 				1337B11D1BB6C7CD00A567C0 /* Info.plist */,
-				1337B1151BB6C7CD00A567C0 /* PayCode.xcdatamodeld */,
-				1337B13F1BB6C9A100A567C0 /* PayCode-BridgingHeader.h */,
 			);
 			path = PayCode;
 			sourceTree = "<group>";
@@ -143,6 +150,46 @@
 				1337B1331BB6C7CD00A567C0 /* Info.plist */,
 			);
 			path = PayCodeUITests;
+			sourceTree = "<group>";
+		};
+		1337B1421BB6D1FD00A567C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1337B1401BB6D13D00A567C0 /* PayMethodsViewController.swift */,
+				1337B1101BB6C7CD00A567C0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1337B1431BB6D20B00A567C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1337B1471BB6D30D00A567C0 /* PaymentCell */,
+				1337B11A1BB6C7CD00A567C0 /* LaunchScreen.storyboard */,
+				1337B1181BB6C7CD00A567C0 /* Assets.xcassets */,
+				1337B1121BB6C7CD00A567C0 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1337B1441BB6D21100A567C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1337B1151BB6C7CD00A567C0 /* PayCode.xcdatamodeld */,
+				1337B13F1BB6C9A100A567C0 /* PayCode-BridgingHeader.h */,
+				1337B10E1BB6C7CD00A567C0 /* AppDelegate.swift */,
+				1337B14C1BB6E08200A567C0 /* AppTheme.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1337B1471BB6D30D00A567C0 /* PaymentCell */ = {
+			isa = PBXGroup;
+			children = (
+				1337B1451BB6D2A900A567C0 /* PaymentCell.swift */,
+				1337B1481BB6D32200A567C0 /* PaymentCell.xib */,
+			);
+			name = PaymentCell;
 			sourceTree = "<group>";
 		};
 		A62AADD416D7B291BD47BFA7 /* Pods */ = {
@@ -261,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1337B11C1BB6C7CD00A567C0 /* LaunchScreen.storyboard in Resources */,
+				1337B14B1BB6DE8400A567C0 /* FontAwesome.otf in Resources */,
 				1337B1191BB6C7CD00A567C0 /* Assets.xcassets in Resources */,
+				1337B1491BB6D32200A567C0 /* PaymentCell.xib in Resources */,
 				1337B1141BB6C7CD00A567C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,8 +384,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1337B1461BB6D2A900A567C0 /* PaymentCell.swift in Sources */,
 				1337B1171BB6C7CD00A567C0 /* PayCode.xcdatamodeld in Sources */,
 				1337B1111BB6C7CD00A567C0 /* ViewController.swift in Sources */,
+				1337B14D1BB6E08200A567C0 /* AppTheme.swift in Sources */,
+				1337B1411BB6D13D00A567C0 /* PayMethodsViewController.swift in Sources */,
 				1337B10F1BB6C7CD00A567C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

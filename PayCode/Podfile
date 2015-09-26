@@ -5,6 +5,9 @@ target 'PayCode' do
 pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'CardIO'
+pod 'FontAwesomeKit'
+pod 'TGLStackedViewController'
+
 end
 
 target 'PayCodeTests' do

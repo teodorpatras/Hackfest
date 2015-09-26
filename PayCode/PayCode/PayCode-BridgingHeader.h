@@ -7,7 +7,8 @@
 //
 
 #import <SVProgressHUD/SVProgressHUD.h>
-
+#import <FontAwesomeKit/FontAwesomeKit.h>
+#import <TGLStackedViewController/TGLStackedViewController.h>
 
 #import "CardIO.h"
 

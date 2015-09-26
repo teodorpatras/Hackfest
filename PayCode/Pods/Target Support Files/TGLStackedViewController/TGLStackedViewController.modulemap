@@ -1,0 +1,6 @@
+framework module TGLStackedViewController {
+  umbrella header "TGLStackedViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

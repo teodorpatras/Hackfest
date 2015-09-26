@@ -53,9 +53,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-PayCode/Alamofire.framework'
+  install_framework 'Pods-PayCode/FontAwesomeKit.framework'
   install_framework 'Pods-PayCode/SVProgressHUD.framework'
+  install_framework 'Pods-PayCode/TGLStackedViewController.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-PayCode/Alamofire.framework'
+  install_framework 'Pods-PayCode/FontAwesomeKit.framework'
   install_framework 'Pods-PayCode/SVProgressHUD.framework'
+  install_framework 'Pods-PayCode/TGLStackedViewController.framework'
 fi

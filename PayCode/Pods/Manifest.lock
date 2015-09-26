@@ -1,16 +1,36 @@
 PODS:
   - Alamofire (2.0.2)
   - CardIO (5.1.1)
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
   - SVProgressHUD (1.1.3)
+  - TGLStackedViewController (1.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - CardIO
+  - FontAwesomeKit
   - SVProgressHUD
+  - TGLStackedViewController
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   CardIO: 2c3a8ef9b9add4bd664c83bb653b83b2f32d9d7f
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  TGLStackedViewController: 2edc69ada1f9ed269d982d9936d7ff567890e634
 
 COCOAPODS: 0.38.2

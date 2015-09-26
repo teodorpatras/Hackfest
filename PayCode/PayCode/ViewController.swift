@@ -8,13 +8,13 @@
 
 import UIKit
 import SVProgressHUD
+import FontAwesomeKit
 
 class ViewController: UIViewController, CardIOPaymentViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         CardIOUtilities.preload()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(animated: Bool) {
