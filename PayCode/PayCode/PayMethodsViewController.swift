@@ -127,6 +127,22 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     }
     
     // MARK: - CollectionView -
+    var flag = true
+    override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        
+        if flag == true {
+            
+            cell.transform = CGAffineTransformMakeScale(0.00001, 0.00001)
+            
+            UIView.animateWithDuration(0.75, delay: Double(0.2) * Double(indexPath.item + 1), usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: .CurveEaseInOut, animations: { () -> Void in
+                cell.transform = CGAffineTransformIdentity
+                }, completion: nil)
+            
+            if indexPath.row == 2 {
+                flag = false
+            }
+        }
+    }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("paymentCell", forIndexPath: indexPath) as! PaymentCell
