@@ -27,7 +27,7 @@ class PaymentCell: UICollectionViewCell {
     
     func configureWithModel(model:Payment) {
         self.model = model
-        self.bgView.layer.cornerRadius = 5.0
+        self.bgView.layer.cornerRadius = 10.0
         self.bgView.layer.masksToBounds = true
         self.chipView.layer.cornerRadius = 5.0
         self.chipView.layer.masksToBounds = true

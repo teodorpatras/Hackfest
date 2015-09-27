@@ -43,12 +43,44 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.clearColor()
         configureUI()
         CardIOUtilities.preload()
         PayPalMobile.preconnectWithEnvironment(PayPalEnvironmentSandbox)
         UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .Slide)
         
         try! self.fetchedResultController.performFetch()
+        
+        if self.fetchedResultController.sections![0].numberOfObjects == 0 {
+            SVProgressHUD.show()
+            
+            let request = NSMutableURLRequest(URL: NSURL(string: "http://ohf.hern.as/payments/")!)
+            request.HTTPMethod = "GET"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            Alamofire.request(request).responseJSON { (request, response, result) -> Void in
+                SVProgressHUD.dismiss()
+                if let array = result.value as? [[String : AnyObject]] {
+                    for dict in array {
+                        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                        let payment = NSEntityDescription.insertNewObjectForEntityForName("Payment", inManagedObjectContext: appDelegate.managedObjectContext) as! Payment
+                        
+                        payment.name = (dict["data"] as? [String: AnyObject])?["name"] as? String ?? "Teodor Patras"
+                        payment.id = dict["id"] as! Int
+                        
+                        payment.type = (dict["card_type"] as? String)?.lowercaseString ?? "paypal"
+                        
+                        payment.identifier = (dict["data"] as? [String: AnyObject])?["email"] as? String ?? ((dict["data"] as? [String: AnyObject])?["number"] as? String)!.curatedString()
+                        
+                        if let str = (dict["data"] as? [String: AnyObject])?["expiration"] as? String {
+                            payment.validUntill = str
+                        }
+                    }
+                }
+            }
+            
+        }
+        
         self.collectionView?.reloadData()
     }
     
@@ -62,7 +94,13 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         if let info = cardInfo {
             
             // 5173 3709 8453 3122
-            let dict = ["number" : info.cardNumber, "expiration" : "\(info.expiryMonth)/\(info.expiryYear)", "cvv" : info.cvv]
+            
+            
+            let str = "\(info.expiryYear)"
+            let year = str.substringFromIndex(2)
+            let expiration = "\(info.expiryMonth)/\(year)"
+            
+            let dict = ["number" : info.cardNumber, "expiration" : expiration, "cvv" : info.cvv]
             
             
             let request = NSMutableURLRequest(URL: NSURL(string: "http://ohf.hern.as/payments/card/")!)
@@ -80,9 +118,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
                     payment.id = dict["id"] as! Int
                     payment.type = (dict["card_type"] as! String).lowercaseString
                     payment.identifier = info.redactedCardNumber
-                    let str = "\(info.expiryYear)"
-                    let year = str.substringFromIndex(2)
-                    payment.validUntill = "\(info.expiryMonth)/\(year)"
+                    payment.validUntill = expiration
                 }
             }
         }
@@ -177,7 +213,7 @@ class PayMethodsViewController: TGLStackedViewController, CardIOPaymentViewContr
         controller.addAction(cardAction)
         controller.addAction(cancelAction)
         self.presentViewController(controller, animated: true, completion: nil)
-                controller.view.tintColor = UIColor(hue:0.03, saturation:0.45, brightness:0.75, alpha:1)
+                controller.view.tintColor = UIColor.blackColor()
     }
     
     // MARK: - Helpers -
@@ -409,5 +445,15 @@ extension String
         }
         let range = Range(start: self.startIndex.advancedBy(start), end: self.startIndex.advancedBy(start + location))
         return self.substringWithRange(range)
+    }
+    
+    func curatedString() -> String {
+        if self.characters.count == 16 {
+            var copy = self.substringFromIndex(12)
+            copy = "••••••••••••" + copy
+            return copy
+        } else {
+            return ""
+        }
     }
 }
